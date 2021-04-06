@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'Louis George Cafe\'';
+    src: url('../font/LouisGeorgeCafe.woff2') format('woff2'), url('LouisGeorgeCafe.woff') format('woff'), url('LouisGeorgeCafe.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+    display: block;
+    overflow-x: hidden;
+    font-family: 'Louis George Cafe\'';
+}
+
+body,
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+    background: #4e60ac;
+    font-family: 'Louis George Cafe\'';
+}
+
+a {
+    color: #87a1f4 !important;
+}
+
+.tittle,
+.tittle_int {
+    color: #fff;
+    transition: color 2s;
+}
+
+.bg_2 .container-fluid:hover>.tittle,
+.bg_3:hover .tittle_int {
+    color: #4e60ac;
+    transition: color 2s;
+}
+
+.bg_2 .row {
+    background-color: white;
+}
+
+.card {
+    border: none;
+}
+
+.logo img {
+    width: 0px !important;
+    transition: width 2s;
+}
+
+.logo_b a img {
+    width: 50px !important;
+    transition: width 2s;
+}
+
+.navbar-light svg {
+    width: 30px;
+    color: #4e60ac;
+}
+
+.navbar-light a img {
+    width: 50px;
+}
+
+.navbar-light ul li a:hover {
+    color: #353535 !important;
+    text-decoration: underline;
+}
+
+.navbar-light ul li a:active {
+    color: #353535 !important;
+    text-decoration: underline;
+}
+
+#start,
+#graphic,
+#interaction {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    min-height: 100%;
+}
+
+.bg_1 {
+    background-image: url("../images/bg_1.jpg");
+    min-height: 100%;
+}
+
+.bg_2 {
+    background-color: none;
+    min-height: 100%;
+}
+
+.bg_3 {
+    background-image: url("../images/bg_3.jpg");
+    min-height: 100%;
+}
