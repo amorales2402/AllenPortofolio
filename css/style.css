@@ -24,16 +24,32 @@ a {
     color: #87a1f4 !important;
 }
 
-.tittle,
-.tittle_int {
+.bg_5 h1 {
+    color: #4e60ac;
+}
+
+.tittle {
     color: #fff;
     transition: color 2s;
 }
 
 .bg_2 .container-fluid:hover>.tittle,
-.bg_3:hover .tittle_int {
+.bg_3:hover .tittle h1,
+.bg_3_2:hover .tittle h1,
+.bg_4:hover .tittle_int h1,
+.bg_3:hover .tittle,
+.bg_3_2:hover .tittle,
+.bg_4:hover .tittle_int {
     color: #4e60ac;
-    transition: color 2s;
+    transition: color 1s;
+}
+
+.bg_2 .container-fluid:hover>.tittle p,
+.bg_3:hover .tittle p,
+.bg_3_2:hover .tittle p,
+.bg_4:hover .tittle_int p {
+    color: #000;
+    transition: color 1s;
 }
 
 .bg_2 .row {
@@ -75,7 +91,8 @@ a {
 
 #start,
 #graphic,
-#interaction {
+#interaction_ux,
+#interaction_apex {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -99,4 +116,14 @@ a {
 .bg_3 {
     background-image: url("../images/bg_3.jpg");
     min-height: 100%;
+}
+
+.bg_3_2 {
+    background-image: url("../images/bg_3_2.jpg");
+    min-height: 100%;
+}
+
+.bg_4 object {
+    height: 600px;
+    ;
 }
