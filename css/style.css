@@ -52,31 +52,36 @@ a {
     transition: color 1s;
 }
 
-.bg_2 .row {
-    background-color: white;
-}
-
 .card {
     border: none;
 }
 
-.logo img {
+.logo svg {
     width: 0px !important;
     transition: width 2s;
 }
 
-.logo_b a img {
+.logo_b a svg {
     width: 50px !important;
     transition: width 2s;
+    fill: #fff;
 }
 
-.navbar-light svg {
-    width: 30px;
-    color: #4e60ac;
+.navbar-light .d-flex svg {
+    width: 50px;
+}
+
+.navbar-light {
+    background-color: #4e60ac !important;
 }
 
 .navbar-light a img {
     width: 50px;
+}
+
+.navbar-light a {
+    color: white !important;
+    transition: color 1s;
 }
 
 .navbar-light ul li a:hover {
