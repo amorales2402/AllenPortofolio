@@ -67,30 +67,30 @@ a {
     fill: #fff;
 }
 
-.navbar-light .d-flex svg {
+.navbar-dark .d-flex svg {
     width: 30px;
     fill: #FFF;
 }
 
-.navbar-light {
+.navbar-dark {
     background-color: #4e60ac !important;
 }
 
-.navbar-light a img {
+.navbar-dark a img {
     width: 50px;
 }
 
-.navbar-light a {
+.navbar-dark a {
     color: white !important;
     transition: color 1s;
 }
 
-.navbar-light ul li a:hover {
+.navbar-dark ul li a:hover {
     color: #353535 !important;
     text-decoration: underline;
 }
 
-.navbar-light ul li a:active {
+.navbar-dark ul li a:active {
     color: #353535 !important;
     text-decoration: underline;
 }
@@ -134,6 +134,25 @@ a {
     ;
 }
 
-.bg-light {
-    color: #e8e2e3;
+@media (max-width: 991.98px) {
+    .bg_2 .tittle,
+    .bg_3 .tittle h1,
+    .bg_3_2 .tittle h1,
+    .bg_4 .tittle_int h1,
+    .bg_3 .tittle,
+    .bg_3_2 .tittle,
+    .bg_4 .tittle_int {
+        color: #4e60ac;
+        transition: color 1s;
+    }
+    .bg_2 .container-fluid .tittle p,
+    .bg_3 .tittle p,
+    .bg_3_2 .tittle p,
+    .bg_4 .tittle_int p {
+        color: #000;
+        transition: color 1s;
+    }
+    .w-dynamic {
+        width: 50%;
+    }
 }
