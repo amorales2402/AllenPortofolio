@@ -59,6 +59,7 @@ a {
 .logo svg {
     width: 0px !important;
     transition: width 2s;
+    fill: #fff;
 }
 
 .logo_b a svg {
