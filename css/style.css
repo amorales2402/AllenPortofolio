@@ -115,6 +115,10 @@ a {
     min-height: 100%;
 }
 
+.bg_1_hq {
+    background-image: url("../images/bg_1_hq.jpg");
+}
+
 .bg_2 {
     background-color: none;
     min-height: 100%;
@@ -125,8 +129,18 @@ a {
     min-height: 100%;
 }
 
+.bg_3_hq {
+    background-image: url("../images/bg_3_hq.jpg");
+    min-height: 100%;
+}
+
 .bg_3_2 {
     background-image: url("../images/bg_3_2.jpg");
+    min-height: 100%;
+}
+
+.bg_3_2_hq {
+    background-image: url("../images/bg_3_2_hq.jpg");
     min-height: 100%;
 }
 
