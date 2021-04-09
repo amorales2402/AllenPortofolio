@@ -174,4 +174,15 @@ a {
     .w-dynamic {
         width: 50%;
     }
+    .bg_1_hq {
+        background-image: url("../images/bg_1_hq_mob.jpg");
+    }
+    .bg_3_hq {
+        background-image: url("../images/bg_3_hq_mob.jpg");
+        min-height: 100%;
+    }
+    .bg_3_2_hq {
+        background-image: url("../images/bg_3_2_hq_mob.jpg");
+        min-height: 100%;
+    }
 }
