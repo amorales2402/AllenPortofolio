@@ -47,19 +47,19 @@ a {
     border: none;
 }
 
-.logo svg {
+.logo img {
     width: 0px !important;
     transition: width 2s;
     fill: #fff;
 }
 
-.logo_b a svg {
+.logo_b a img {
     width: 30px !important;
     transition: width 2s;
     fill: #fff;
 }
 
-.navbar-dark .d-flex svg {
+.navbar-dark .d-flex img {
     width: 30px;
     fill: #FFF;
 }
