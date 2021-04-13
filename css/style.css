@@ -38,13 +38,17 @@ a {
     display: flex;
 }
 
+.section_free h1 {
+    color: #c0cdf2
+}
+
 .section:nth-child(3) {
     background-color: #fff;
     z-index: -3;
 }
 
 .section:nth-child(4) {
-    background-color: #dce2f6;
+    background-color: #fff;
     z-index: -4;
 }
 
