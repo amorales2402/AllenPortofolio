@@ -18,8 +18,4 @@ window.addEventListener('load', function() {
             allimages[i].setAttribute('src', allimages[i].getAttribute('data-src'));
         }
     }
-    $(".bg_1").addClass("bg_1_hq");
-    $(".bg_3").addClass("bg_3_hq");
-    $(".bg_3_2").addClass("bg_3_2_hq");
-
-}, false)
+}, false);
