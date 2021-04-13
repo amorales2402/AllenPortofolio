@@ -160,3 +160,44 @@ a {
 .bi-linkedin {
     font-size: 2rem;
 }
+
+.bi-arrow-down-circle {
+    font-size: 2rem;
+}
+
+.arrow-effect {
+    position: relative;
+    -webkit-animation-name: example;
+    -moz-animation-name: example;
+    -o-animation-name: example;
+    animation-name: example;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-iteration-count: 5;
+    -moz-animation-iteration-count: 5;
+    -o-animation-iteration-count: 5;
+    animation-iteration-count: 5;
+}
+
+@keyframes example {
+    0% {
+        top: 0px;
+    }
+    20% {
+        top: 2px;
+    }
+    40% {
+        top: 4px;
+    }
+    60% {
+        top: 6px;
+    }
+    80% {
+        top: 8px;
+    }
+    100% {
+        top: 10px;
+    }
+}

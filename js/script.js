@@ -18,4 +18,5 @@ window.addEventListener('load', function() {
             allimages[i].setAttribute('src', allimages[i].getAttribute('data-src'));
         }
     }
+    $(".bi-arrow-down-circle").addClass("arrow-effect");
 }, false);
