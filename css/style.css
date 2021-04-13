@@ -16,7 +16,6 @@ body,
 html {
     height: 100%;
     scroll-behavior: smooth;
-    background: #4e60ac;
     font-family: 'Louis George Cafe\'';
 }
 
@@ -28,7 +27,7 @@ a {
     color: #414042;
 }
 
-.navbar-dark a {
+.navbar-collapse a {
     color: #4e60ac !important;
 }
 
@@ -36,9 +35,16 @@ a {
     align-items: center;
     bottom: 0;
     display: flex;
-    background-color: #fff;
+    background-color: #4e60ac;
     position: -webkit-sticky;
     position: sticky;
+    z-index: -1;
+}
+
+.section_free {
+    align-items: center;
+    bottom: 0;
+    display: flex;
     z-index: -1;
 }
 
@@ -50,11 +56,6 @@ a {
 .section:nth-child(4) {
     background-color: #dce2f6;
     z-index: -4;
-}
-
-.section:nth-child(5) {
-    background-color: #fff;
-    z-index: -5;
 }
 
 .section:nth-child(5) h1 {
