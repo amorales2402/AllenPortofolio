@@ -45,7 +45,6 @@ a {
     align-items: center;
     bottom: 0;
     display: flex;
-    z-index: -1;
 }
 
 .section:nth-child(3) {
