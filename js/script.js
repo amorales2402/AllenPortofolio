@@ -3,9 +3,10 @@
         var scroll = $(window).scrollTop();
 
         if (scroll >= 400) {
-            $(".navbar").addClass("logo_b");
+            $(".bi-arrow-down-circle").removeClass("arrow-effect");
         } else {
-            $(".navbar").removeClass("logo_b");
+            $(".bi-arrow-down-circle").addClass("arrow-effect");
+
         }
 
     });
