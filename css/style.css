@@ -331,4 +331,19 @@ a {
     .mob-justify-content-center {
         justify-content: center !important;
     }
+    .diagonal1 {
+        -ms-transform: skewX(0deg);
+        /* IE 9 */
+        transform: skewX(0deg);
+    }
+    .diagonal2 {
+        -ms-transform: skewX(0deg);
+        /* IE 9 */
+        transform: skewX(0deg);
+    }
+    .diagonaltxt1 {
+        -ms-transform: skewX(0deg);
+        /* IE 9 */
+        transform: skewX(0deg);
+    }
 }
