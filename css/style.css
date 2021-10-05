@@ -331,17 +331,17 @@ a {
     .mob-justify-content-center {
         justify-content: center !important;
     }
-    .diagonal1 {
+    .resume .diagonal1 {
         -ms-transform: skewX(0deg);
         /* IE 9 */
         transform: skewX(0deg);
     }
-    .diagonal2 {
+    .resume .diagonal2 {
         -ms-transform: skewX(0deg);
         /* IE 9 */
         transform: skewX(0deg);
     }
-    .diagonaltxt1 {
+    .resume .diagonaltxt1 {
         -ms-transform: skewX(0deg);
         /* IE 9 */
         transform: skewX(0deg);
