@@ -66,6 +66,7 @@ a {
 .selfmade,
 .resume,
 .resume2,
+.mobrow,
 .section1,
 .section2,
 .section3,
@@ -345,5 +346,17 @@ a {
         -ms-transform: skewX(0deg);
         /* IE 9 */
         transform: skewX(0deg);
+    }
+}
+
+@media (max-width: 575.98px) {
+    .normalrow {
+        display: none;
+    }
+    .mobrow {
+        display: block;
+    }
+    .mobrow .transcontainerright {
+        margin-left: -14px;
     }
 }
