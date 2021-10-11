@@ -31,7 +31,7 @@ a {
 }
 
 .navbar {
-    background-color: #000;
+    background-color: #02080c;
     z-index: 1;
 }
 
@@ -43,7 +43,7 @@ a {
 }
 
 .bg-black {
-    background-color: #000;
+    background-color: #080c0f;
 }
 
 .btn-dark {
@@ -91,7 +91,7 @@ a {
     align-items: center;
     bottom: 0;
     display: flex;
-    background-color: #000;
+    background-color: #02080c;
     z-index: -1;
 }
 
@@ -118,7 +118,7 @@ a {
 
 .bi-exclamation-lg {
     font-size: 15px;
-    color: #b83b51 !important;
+    color: yellow !important;
     -webkit-transition: color 1.5s linear;
     -moz-transition: color 1.5s linear;
     transition: color 1.5s linear;
@@ -133,14 +133,14 @@ a {
 }
 
 .bg-light .bi-house {
-    color: #000 !important;
+    color: #02080c !important;
     -webkit-transition: color 1.5s linear;
     -moz-transition: color 1.5s linear;
     transition: color 1.5s linear;
 }
 
 .bg-light .bi-ui-checks {
-    color: #000 !important;
+    color: #02080c !important;
     -webkit-transition: color 1.5s linear;
     -moz-transition: color 1.5s linear;
     transition: color 1.5s linear;
@@ -151,8 +151,12 @@ a {
     margin-top: 10px;
 }
 
+.bg-light .bi-exclamation-lg {
+    color: red !important;
+}
+
 .bg-light .bi-arrow-left-short {
-    color: #000 !important;
+    color: #02080c !important;
     -webkit-transition: color .5s linear;
     -moz-transition: color .5s linear;
     transition: color .5s linear;
@@ -160,7 +164,7 @@ a {
 
 .bi-facebook,
 .bi-linkedin {
-    color: #000 !important;
+    color: #02080c !important;
 }
 
 .bi::before {
@@ -270,7 +274,7 @@ a {
 }
 
 .selfmade {
-    background: linear-gradient(to bottom right, #fff 70%, #000 30%);
+    background: linear-gradient(to right, #fff 70%, #080c0f 30%);
     margin-top: -5%;
     overflow: hidden;
 }
