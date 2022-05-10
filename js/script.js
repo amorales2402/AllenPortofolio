@@ -1,250 +1,102 @@
-var currentsection = "hola";
-var lastsection = "hola";
-
-
+"use strict";
+var current_section;
+var current_section_temp;
+var next_section;
 function animatelogo() {
-    $(".transitionleft").addClass("translogoleft");
-    $(".transitionright").addClass("translogoright");
+    const element_left = document.getElementById("transitionleft");
+    const element_right = document.getElementById("transitionright");
+    if (element_left != null) {
+        element_left.classList.add("translogoleft");
+    }
+    if (element_right != null) {
+        element_right.classList.add("translogoright");
+    }
 }
-
 function removelogo() {
-    $(".transitionleft").removeClass("translogoleft");
-    $(".transitionright").removeClass("translogoright");
-    $(".transcontainerright").removeClass("transcontright");
+    const element_left = document.getElementById("transitionleft");
+    const element_right = document.getElementById("transitionright");
+    const container_right = document.getElementById("transcontainerright");
+    if (element_left != null) {
+        element_left.classList.remove("translogoleft");
+    }
+    if (element_right != null) {
+        element_right.classList.remove("translogoright");
+    }
+    if (container_right != null) {
+        container_right.classList.remove("transcontright");
+    }
 }
-
-function animatetxt(currentsection) {
-    $(".transitiontxtleft" + currentsection.substring(1, 2) + currentsection.substring(8, 9)).addClass("transtxtleft" + currentsection.substring(1, 2) + currentsection.substring(8, 9));
-    $(".transitiontxtright" + currentsection.substring(1, 2) + currentsection.substring(8, 9)).addClass("transtxtright" + currentsection.substring(1, 2) + currentsection.substring(8, 9));
-}
-
-function removetxt(currentsection) {
-    $(".transitiontxtleft" + currentsection.substring(1, 2) + currentsection.substring(8, 9)).removeClass("transtxtleft" + currentsection.substring(1, 2) + currentsection.substring(8, 9));
-    $(".transitiontxtright" + currentsection.substring(1, 2) + currentsection.substring(8, 9)).removeClass("transtxtright" + currentsection.substring(1, 2) + currentsection.substring(8, 9));
-}
-
-window.addEventListener('load', function() {
-
-    animatelogo();
-
-    var allimages = document.getElementsByTagName('img');
-    for (var i = 0; i < allimages.length; i++) {
-        if (allimages[i].getAttribute('data-src')) {
-            allimages[i].setAttribute('src', allimages[i].getAttribute('data-src'));
+function app_navigator(current_section, next_section, tittle_text) {
+    if (current_section == "section") {
+        if (current_section_temp == null) {
+            current_section = "section1";
+        }
+        else {
+            current_section = current_section_temp;
         }
     }
-
-}, false);
-
-$('#click1').click(function() {
-    $(".section1").animate({
-        width: "toggle"
-    });
-    $(".section2").animate({
-        width: "toggle"
-    });
-
-
-    $(".home").show();
-
-    $(".navbar").addClass("bg-light");
-
-    currentsection = ".section2";
-    lastsection = ".section1";
-
-    animatetxt(currentsection);
-    removelogo();
-});
-
-$('#click2').click(function() {
-    $(".section2").animate({
-        width: "toggle"
-    });
-    $(".section3").animate({
-        width: "toggle"
-    });
-
-    currentsection = ".section3";
-    lastsection = ".section2";
-
-    removetxt(lastsection);
-    animatetxt(currentsection);
-});
-
-$('#click3').click(function() {
-    $(".section3").animate({
-        width: "toggle"
-    });
-    $(".section4").animate({
-        width: "toggle"
-    });
-
-    currentsection = ".section4";
-    lastsection = ".section3";
-
-    removetxt(lastsection);
-    animatetxt(currentsection);
-});
-$('#click4').click(function() {
-    $(".section4").animate({
-        width: "toggle"
-    });
-    $(".section5").animate({
-        width: "toggle"
-    });
-
-    currentsection = ".section5";
-    lastsection = ".section4";
-
-    removetxt(lastsection);
-    animatetxt(currentsection);
-});
-
-$('#menu1').click(function() {
-
-    $(".section1").animate({
-        width: "toggle"
-    })
-    $(currentsection).animate({
-        width: "toggle"
-    })
-
-    $(".home").hide();
-    $(".selfmadeopt").show();
-    $(".resumeopt").show();
-    $(".navbar").removeClass("bg-light");
-
-    currentsection = ".section1";
-    lastsection = ".section2";
-
+    var current_section_html = document.getElementById(current_section);
+    var next_section_html = document.getElementById(next_section);
+    var tittle_text_html = document.getElementById("tittle_menu");
+    var home = document.getElementById("home_option");
+    var resume = document.getElementById("resume_option");
+    var menu = document.getElementById("navbar");
+    if (current_section_html != null) {
+        current_section_html.style.display = "none";
+        if (current_section == "section1") {
+            removelogo();
+        }
+    }
+    if (next_section_html != null) {
+        next_section_html.style.display = "flex";
+    }
+    if (home != null) {
+        if (next_section == "section1") {
+            home.style.display = "none";
+            if (resume != null) {
+                resume.style.display = "block";
+            }
+            animatelogo();
+        }
+        else {
+            if (home.style.display != "block") {
+                home.style.display = "block";
+            }
+        }
+    }
+    if (menu != null) {
+        if (next_section == "section1") {
+            menu.classList.remove("bg-light");
+        }
+        else {
+            if (menu.classList.contains("bg-light")) {
+            }
+            else {
+                menu.classList.add("bg-light");
+            }
+        }
+    }
+    console.log(next_section);
+    console.log(resume);
+    if ((next_section == "resume")) {
+        if (resume != null) {
+            resume.style.display = "none";
+        }
+    }
+    //if (next_section != "section1") {
+    if (tittle_text_html != null) {
+        //    tittle_text_html.style.display = "flex";
+        tittle_text_html.innerHTML = tittle_text;
+    }
+    //}
+    current_section_temp = next_section;
+}
+window.onload = function () {
     animatelogo();
-    removetxt(lastsection);
-});
-
-$('#menu6 ').click(function() {
-    $(".section1").animate({
-        width: "toggle"
-    });
-    $(".section2").animate({
-        width: "toggle"
-    });
-
-
-    $(".home").hide();
-    $(".navbar").removeClass("bg-light");
-
-    currentsection = ".section1";
-    lastsection = ".section2";
-
-    removetxt(lastsection);
-    animatelogo();
-});
-$('#menu5').click(function() {
-    $(".section2").animate({
-        width: "toggle"
-    });
-    $(".section3").animate({
-        width: "toggle"
-    });
-
-    currentsection = ".section2";
-    lastsection = ".section3";
-
-    removetxt(lastsection);
-    animatetxt(currentsection);
-});
-$('#menu4').click(function() {
-    $(".section3").animate({
-        width: "toggle"
-    });
-    $(".section4").animate({
-        width: "toggle"
-    });
-
-    currentsection = ".section3";
-    lastsection = ".section4";
-
-    removetxt(lastsection);
-    animatetxt(currentsection);
-});
-$('#menu3').click(function() {
-    $(".section4").animate({
-        width: "toggle"
-    });
-    $(".section5").animate({
-        width: "toggle"
-    });
-
-    currentsection = ".section4";
-    lastsection = ".section5";
-
-    removetxt(lastsection);
-    animatetxt(currentsection);
-});
-
-
-$('#selfmade').click(function() {
-    console.log(lastsection, currentsection);
-    $(".selfmade").animate({
-        width: "toggle"
-    })
-    if (currentsection == "hola") {
-        $(".section1").animate({
-            width: "toggle"
-        })
-    } else {
-        $(currentsection).animate({
-            width: "toggle"
-        })
+    var allimages = document.getElementsByTagName("img");
+    for (var i = 0; i < allimages.length; i++) {
+        if (allimages[i].getAttribute("data-src")) {
+            allimages[i].setAttribute("src", allimages[i].getAttribute("data-src"));
+        }
     }
-
-
-
-    $(".home").show();
-    $(".selfmadeopt").hide();
-    $(".navbar").addClass("bg-light");
-    if (currentsection == "hola") {
-        currentsection = ".selfmade";
-    }
-    currentsection = ".selfmade";
-    lastsection = ".section1";
-    console.log(lastsection, currentsection);
-});
-
-$('#resume').click(function() {
-    console.log(lastsection, currentsection);
-    $(".resume").animate({
-        width: "toggle"
-    })
-    if (currentsection == "hola") {
-        $(".section1").animate({
-            width: "toggle"
-        })
-    } else {
-        $(currentsection).animate({
-            width: "toggle"
-        })
-    }
-
-    $(".home").show();
-    $(".resumeopt").hide();
-    $(".navbar").addClass("bg-light");
-    if (currentsection == "hola") {
-        currentsection = ".resume";
-    }
-    currentsection = ".resume";
-    lastsection = ".section1";
-    console.log(lastsection, currentsection);
-});
-
-$('#resumeopt').click(function() {
-    $(".resume").animate({
-        width: "toggle"
-    });
-    $(".resume2").animate({
-        width: "toggle"
-    });
-
-    currentsection = ".resume2";
-    lastsection = ".resume";
-});
+};

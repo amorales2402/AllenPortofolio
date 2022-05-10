@@ -1,366 +1,426 @@
 html {
-    display: block;
-    overflow-x: hidden;
+  display: block;
+  overflow-x: hidden;
 }
 
 body,
 html {
-    height: 100%;
-    scroll-behavior: smooth;
-    font-family: Helvetica, sans-serif, arial;
+  height: 100%;
+  scroll-behavior: smooth;
+  font-family: Helvetica, sans-serif, arial;
 }
 
+p {  font-size: 14px !important;
+}
+
+
+
 a {
-    color: #999999 !important;
+  color: rgba(202, 76, 76, 1) !important;
+}
+
+.red_brand {
+  color: rgba(202, 76, 76, 1) !important;
+}
+.red_brand_bg {
+  background-color: rgba(202, 76, 76, 1);
 }
 
 .bg_5 h1 {
-    color: #414042;
+  color: #414042;
 }
 
 .h-0 {
-    height: 0px;
+  height: 0px;
 }
 
 .w-0 {
-    width: 0px;
+  width: 0px;
 }
 
 .normal-text {
-    color: #999999;
+  color: #999999;
 }
 
 .navbar {
-    background-color: #02080c;
-    z-index: 1;
+  background-color: #02080c;
+  z-index: 1;
 }
 
 .bg-light {
-    background-color: transparent !important;
-    -webkit-transition: background .5s linear;
-    -moz-transition: background .5s linear;
-    transition: background .5s linear;
+  background-color: transparent !important;
+  -webkit-transition: background 0.5s linear;
+  -moz-transition: background 0.5s linear;
+  transition: background 0.5s linear;
 }
 
 .bg-black {
-    background-color: #080c0f;
+  background-color: #080c0f;
 }
 
 .btn-dark {
-    background-color: transparent !important;
-    border: 0px;
-    -webkit-transition: background 1.5s linear;
-    -moz-transition: background 1.5s linear;
-    transition: background 1.5s linear;
+  background-color: transparent !important;
+  border: 0px;
+  -webkit-transition: background 1.5s linear;
+  -moz-transition: background 1.5s linear;
+  transition: background 1.5s linear;
 }
 
 .option-right:hover {
-    background-color: #f2f2f2;
-    -webkit-transition: background .5s linear;
-    -moz-transition: background .5s linear;
-    transition: background .5s linear;
+  background-color: #f2f2f2;
+  -webkit-transition: background 0.5s linear;
+  -moz-transition: background 0.5s linear;
+  transition: background 0.5s linear;
 }
 
-.home,
-.back,
-.selfmade,
-.resume,
-.resume2,
+.rotate_left,
+.rotate_right {
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  max-width: 2em;
+}
+.rotate_left div {
+  /* FF3.5+ */
+  -moz-transform: rotate(90deg);
+  /* Opera 10.5 */
+  -o-transform: rotate(90deg);
+  /* Saf3.1+, Chrome */
+  -webkit-transform: rotate(90deg);
+  /* Standard */
+  transform: rotate(90deg);
+  margin-left: -10em;
+  margin-right: -10em;
+}
+.rotate_right div {
+  /* FF3.5+ */
+  -moz-transform: rotate(-90deg);
+  /* Opera 10.5 */
+  -o-transform: rotate(-90deg);
+  /* Saf3.1+, Chrome */
+  -webkit-transform: rotate(-90deg);
+  /* Standard */
+  transform: rotate(-90deg);
+  margin-left: -10em;
+  margin-right: -10em;
+}
+
+
+.after_rotate p {
+  margin-left: 2em;
+}
+
+.app_navigator_toggle_off {
+  display: none;
+}
+
+#section1 {
+  display: none;
+}
+
+#back,
+#selfmade,
+#home_option,
+#resume,
+#resume2,
 .mobrow,
-.section1,
-.section2,
-.section3,
-.section4,
-.section5,
-.section6,
-.section7,
-.section8,
-.section9,
-.section10,
-.section11,
-.section12,
-.section13,
-.section14,
-.section15,
-.section16,
-.section17 {
-    display: none;
+#section2,
+#section3,
+#section4,
+#section5,
+#section6,
+#section7,
+#section8,
+#section9,
+#section10,
+#section11,
+#section12,
+#section13,
+#section14,
+#section15,
+#section16,
+#section17 {
+  display: none;
 }
 
-.section1 {
-    align-items: center;
-    bottom: 0;
-    display: flex;
-    background-color: #02080c;
-    z-index: -1;
+#selfmade {
+  margin-top:-  2em;
 }
 
-.section2 {
-    align-items: center;
-    bottom: 0;
+#section1 {
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  background-color: #02080c;
+  z-index: -1;
+}
+
+#section2 {
+  align-items: center;
+  bottom: 0;
 }
 
 .bi-house {
-    font-size: 25px;
-    color: white !important;
-    -webkit-transition: color 1.5s linear;
-    -moz-transition: color 1.5s linear;
-    transition: color 1.5s linear;
+  font-size: 25px;
+  color: white !important;
+  -webkit-transition: color 1.5s linear;
+  -moz-transition: color 1.5s linear;
+  transition: color 1.5s linear;
 }
 
 .bi-ui-checks {
-    font-size: 15px;
-    color: white !important;
-    -webkit-transition: color 1.5s linear;
-    -moz-transition: color 1.5s linear;
-    transition: color 1.5s linear;
+  font-size: 15px;
+  color: white !important;
+  -webkit-transition: color 1.5s linear;
+  -moz-transition: color 1.5s linear;
+  transition: color 1.5s linear;
 }
 
 .bi-exclamation-lg {
-    font-size: 15px;
-    color: yellow !important;
-    -webkit-transition: color 1.5s linear;
-    -moz-transition: color 1.5s linear;
-    transition: color 1.5s linear;
+  font-size: 15px;
+  color: yellow !important;
+  -webkit-transition: color 1.5s linear;
+  -moz-transition: color 1.5s linear;
+  transition: color 1.5s linear;
 }
 
 .bi-arrow-left-short {
-    font-size: 15px;
-    color: white;
-    -webkit-transition: color 1.5s linear;
-    -moz-transition: color 1.5s linear;
-    transition: color 1.5s linear;
+  font-size: 15px;
+  color: white;
+  -webkit-transition: color 1.5s linear;
+  -moz-transition: color 1.5s linear;
+  transition: color 1.5s linear;
 }
 
 .bg-light .bi-house {
-    color: #02080c !important;
-    -webkit-transition: color 1.5s linear;
-    -moz-transition: color 1.5s linear;
-    transition: color 1.5s linear;
+  color: #02080c !important;
+  -webkit-transition: color 1.5s linear;
+  -moz-transition: color 1.5s linear;
+  transition: color 1.5s linear;
 }
 
 .bg-light .bi-ui-checks {
-    color: #02080c !important;
-    -webkit-transition: color 1.5s linear;
-    -moz-transition: color 1.5s linear;
-    transition: color 1.5s linear;
+  color: #02080c !important;
+  -webkit-transition: color 1.5s linear;
+  -moz-transition: color 1.5s linear;
+  transition: color 1.5s linear;
 }
 
 .bg-light .bi-exclamation-lg,
 .bg-light .bi-ui-checks {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .bg-light .bi-exclamation-lg {
-    color: red !important;
+  color: rgba(202, 76, 76, 1) !important;
 }
 
 .bg-light .bi-arrow-left-short {
-    color: #02080c !important;
-    -webkit-transition: color .5s linear;
-    -moz-transition: color .5s linear;
-    transition: color .5s linear;
+  color: #02080c !important;
+  -webkit-transition: color 0.5s linear;
+  -moz-transition: color 0.5s linear;
+  transition: color 0.5s linear;
 }
 
 .bi-facebook,
 .bi-linkedin {
-    color: #02080c !important;
+  color: #02080c !important;
 }
 
 .bi::before {
-    padding-right: 12px;
+  padding-right: 12px;
 }
 
 .bi-facebook,
 .bi-linkedin {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .bt-clickme {
-    margin-top: 100px !important;
+  margin-top: 100px !important;
 }
 
 .transcontainerleft {
-    overflow: hidden;
+  overflow: hidden;
 }
 
-.transitionleft {
-    float: right;
-    height: 100%;
-    margin-right: -300px;
+#transitionleft {
+  float: right;
+  height: 100%;
+  margin-right: -300px;
 }
 
 .translogoleft {
-    -webkit-transition: margin 1.5s linear;
-    -moz-transition: margin 1.5s linear;
-    transition: margin 1.5s linear;
-    margin-right: 0px;
+  -webkit-transition: margin 1.5s linear;
+  -moz-transition: margin 1.5s linear;
+  transition: margin 1.5s linear;
+  margin-right: 0px !important;
 }
 
 .transcontainerright {
-    overflow: hidden;
-    margin-left: -40px;
+  overflow: hidden;
+  margin-left: -40px;
 }
 
-.transitionright {
-    float: left;
-    height: 100%;
-    margin-left: -200px;
+#transitionright {
+  float: left;
+  height: 100%;
+  margin-left: -200px;
 }
 
 .translogoright {
-    -webkit-transition: margin 1.5s linear;
-    -moz-transition: margin 1.5s linear;
-    transition: margin 1.5s linear;
-    margin-left: 0px;
+  -webkit-transition: margin 1.5s linear;
+  -moz-transition: margin 1.5s linear;
+  transition: margin 1.5s linear;
+  margin-left: 0px !important;
 }
 
 .transcontainertxt {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .transitiontxtrights3,
 .transitiontxtrights4,
 .transitiontxtrights5 {
-    float: left;
-    height: 100%;
-    margin-left: -1000px;
+  float: left;
+  height: 100%;
+  margin-left: -1000px;
 }
 
 .transtxtrights3,
 .transtxtrights4,
 .transtxtrights5 {
-    -webkit-transition: margin .5s linear;
-    -moz-transition: margin .5s linear;
-    transition: margin .5s linear;
-    margin-left: 0px;
+  -webkit-transition: margin 0.5s linear;
+  -moz-transition: margin 0.5s linear;
+  transition: margin 0.5s linear;
+  margin-left: 0px;
 }
 
 .transitiontxtlefts3,
 .transitiontxtlefts4,
 .transitiontxtlefts5 {
-    float: right;
-    margin-right: -1000px;
+  float: right;
+  margin-right: -1000px;
 }
 
 .transtxtlefts3,
 .transtxtlefts4,
 .transtxtlefts5 {
-    -webkit-transition: margin .5s linear;
-    -moz-transition: margin .5s linear;
-    transition: margin .5s linear;
-    margin-right: 0px;
+  -webkit-transition: margin 0.5s linear;
+  -moz-transition: margin 0.5s linear;
+  transition: margin 0.5s linear;
+  margin-right: 0px;
 }
 
 @keyframes example {
-    0% {
-        top: 0px;
-    }
-    20% {
-        top: 2px;
-    }
-    40% {
-        top: 4px;
-    }
-    60% {
-        top: 6px;
-    }
-    80% {
-        top: 8px;
-    }
-    100% {
-        top: 10px;
-    }
+  0% {
+    top: 0px;
+  }
+  20% {
+    top: 2px;
+  }
+  40% {
+    top: 4px;
+  }
+  60% {
+    top: 6px;
+  }
+  80% {
+    top: 8px;
+  }
+  100% {
+    top: 10px;
+  }
 }
 
 .selfmade {
-    background: linear-gradient(to right, #fff 70%, #080c0f 30%);
-    margin-top: -5%;
-    overflow: hidden;
+  background: linear-gradient(to right, #fff 70%, #080c0f 30%);
+  margin-top: -5%;
+  overflow: hidden;
 }
 
 .resume,
 .section1 {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .diagonal1 {
-    -ms-transform: skewX(-20deg);
-    /* IE 9 */
-    transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  /* IE 9 */
+  transform: skewX(-20deg);
 }
 
 .diagonal2 {
-    -ms-transform: skewX(-20deg);
-    /* IE 9 */
-    transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  /* IE 9 */
+  transform: skewX(-20deg);
 }
 
 .diagonaltxt1 {
-    -ms-transform: skewX(20deg);
-    /* IE 9 */
-    transform: skewX(20deg);
+  -ms-transform: skewX(20deg);
+  /* IE 9 */
+  transform: skewX(20deg);
 }
 
 .branding {
-    -ms-transform: skewX(90deg);
-    /* IE 9 */
-    transform: skewX(90deg);
+  -ms-transform: skewX(90deg);
+  /* IE 9 */
+  transform: skewX(90deg);
 }
 
 @media (max-width: 769.9px) {
-    .psm-0 {
-        padding: 0px !important;
-    }
-    .msm-3 {
-        margin: 1rem !important;
-    }
-    .msmr-1 {
-        margin-right: .25rem !important;
-    }
-    .msmr-2 {
-        margin-right: .50rem !important;
-    }
-    .msmr-3 {
-        margin-right: 1rem !important;
-    }
-    .msmt-3 {
-        margin-top: 1rem !important;
-    }
-    .mob-text-center {
-        text-align: center !important;
-    }
-    .mob-text-left {
-        text-align: left !important;
-    }
-    .mob-justify-content-center {
-        justify-content: center !important;
-    }
-    .resume .diagonal1 {
-        -ms-transform: skewX(0deg);
-        /* IE 9 */
-        transform: skewX(0deg);
-    }
-    .resume .diagonal2 {
-        -ms-transform: skewX(0deg);
-        /* IE 9 */
-        transform: skewX(0deg);
-    }
-    .resume .diagonaltxt1 {
-        -ms-transform: skewX(0deg);
-        /* IE 9 */
-        transform: skewX(0deg);
-    }
+  .psm-0 {
+    padding: 0px !important;
+  }
+  .msm-3 {
+    margin: 1rem !important;
+  }
+  .msmr-1 {
+    margin-right: 0.25rem !important;
+  }
+  .msmr-2 {
+    margin-right: 0.5rem !important;
+  }
+  .msmr-3 {
+    margin-right: 1rem !important;
+  }
+  .msmt-3 {
+    margin-top: 1rem !important;
+  }
+  .mob-text-center {
+    text-align: center !important;
+  }
+  .mob-text-left {
+    text-align: left !important;
+  }
+  .mob-justify-content-center {
+    justify-content: center !important;
+  }
+  .resume .diagonal1 {
+    -ms-transform: skewX(0deg);
+    /* IE 9 */
+    transform: skewX(0deg);
+  }
+  .resume .diagonal2 {
+    -ms-transform: skewX(0deg);
+    /* IE 9 */
+    transform: skewX(0deg);
+  }
+  .resume .diagonaltxt1 {
+    -ms-transform: skewX(0deg);
+    /* IE 9 */
+    transform: skewX(0deg);
+  }
 }
 
 @media (max-width: 575.98px) {
-    .normalrow {
-        display: none;
-    }
-    .mobrow {
-        display: block;
-    }
-    .mobrow .transcontainerright {
-        margin-left: -14px;
-    }
+  .normalrow {
+    display: none;
+  }
+  .mobrow {
+    display: block;
+  }
+  .mobrow .transcontainerright {
+    margin-left: -14px;
+  }
 }

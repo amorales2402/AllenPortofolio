@@ -58,35 +58,39 @@
 </head>
 
 <body>
-    <header class="navbar navbar-expand-lg flex-column flex-md-row navbar-light">
+    <header id="navbar" class="navbar navbar-expand-lg flex-column flex-md-row navbar-light">
         <div class="navbar-nav-scroll">
             <ul class="navbar-nav bd-navbar-nav flex-row mb-2 mb-lg-0">
-                <li class="nav-item home msmr-3 ">
-                    <a id="menu1" class="nav-link bi-house active" aria-current="page" href="#"></a>
+                <li id="home_option" class="nav-item msmr-3 ">
+                    <a  class="nav-link bi-house active" aria-current="page" href="#" onclick="app_navigator('section','section1','Designed and Developed 100% by Allen Morales')"></a>
                 </li>
-                <li class="nav-item resumeopt msmr-3">
-                    <a id="resume" class="nav-link bi-ui-checks" href="#">Resume</a>
+                <li id="resume_option" class="nav-item resumeopt msmr-3">
+                    <a  class="nav-link bi-ui-checks" href="#" onclick="app_navigator('section','resume','Resume')">Resume</a>
                 </li>
-                <li class="nav-item selfmadeopt">
-                    <a id="selfmade" class="nav-link bi-exclamation-lg" href="#">Must See This</a>
-                </li>
+                <!--<li class="nav-item selfmadeopt">
+                    <a id="selfmade11" class="nav-link bi-exclamation-lg" href="#"  onclick="app_navigator('section','selfmade','')">Must See This</a>
+                </li>-->
         </div>
+        <ul class="navbar-nav ml-md-auto">
+            <li class="nav-item dropdown">
+              <p id="tittle_menu" class=" red_brand">Designed and Developed 100% by Allen Morales</p>
+             
     </header>
 
-    <section id="click1" class="section1 h-100">
+    <section id="section1" class="h-100" onclick="app_navigator('section1','section2','Information Techonologies')">
         <div class="container-fluid ">
             <div class="row normalrow flex-fill justify-content-center align-items-center h-100">
                 <div class="col-12">
                     <div class=" h-100 row w-100 justify-content-center ">
                         <div class="transcontainerleft ">
-                            <img class=" transitionleft" src="./images/logo/morales.png " alt="Logo ">
+                            <img id="transitionleft" src="./images/logo/morales.png " alt="Logo ">
                         </div>
 
                         <div style="margin-left:-43px;">
                             <img class=" h-100" src="./images/logo/barra.png " alt="Logo ">
                         </div>
                         <div class="transcontainerright">
-                            <img class="transitionright" src="./images/logo/allen.png " alt="Logo ">
+                            <img id="transitionright" src="./images/logo/allen.png " alt="Logo ">
                         </div>
                     </div>
                     <div class="row justify-content-center p-0 m-0 bt-clickme">
@@ -108,34 +112,440 @@
                             <img class="transitionright" src="./images/logo/allen_mob.png " alt="Logo ">
                         </div>
                     </div>
-                    <div class="row justify-content-center p-0 m-0 bt-clickme">
+                    <div class="row justify-content-center p-0 m-0 bt-clickme">Î
                         <button class=" p-2 btn btn-dark">Click me</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="section2 h-100">
-        <div class="container-fluid  h-100">
-            <div class="row flex-fill justify-content-center align-items-top  h-100">
+    
+    <section id="section2" class=" h-100">
+        <div class="container-fluid h-100">
+            <div class="row flex-fill justify-content-center align-items-top mt-5 h-100">
                 <div class="col-2 col-sm-2 col-md-2 col-lg-1 right-option h-100">
-                    <div id="menu6" class="row flex-fill justify-content-center align-items-center h-100 option-right">
+                    <div id="menu5" class="row flex-fill justify-content-center align-items-center h-100 option-right" onclick="app_navigator('section2','section1','Designed and Developed 100% by Allen Morales')">
                         <p class="bi-arrow-left">Prev</p>
                     </div>
                 </div>
                 <div class="col-8 col-sm-8 col-md-8 col-lg-10">
+                    <div class="row flex-fill justify-content-center align-items-center msmt-3">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-4 ">
+                            <div class="row justify-content-start align-items-center pb-5">
+                                <table>
+                                    <tr>
+                                        <td class="rotate_left">
+                                            <div><h4 >Project<h4></div>
+                                            </td>
+                                            <td class="after_rotate">
+                                            <p class=" mb-0 text-justify"><span class="red_brand">Requirement: </span>Creation of main web page.</p>
+                                            <p class=" mb-0 text-justify"><span class="red_brand">Role: </span>User Experience, User Interface, Development and SEO</p>
+                                        </td>
+                                    </tr>
+                                </table>                            
+                            </div>
+                            <div class="row justify-content-start align-items-center pb-5">
+                                <table>
+                                    <tr>
+                                        <td class="rotate_right">
+                                            <div><h4 class="red_brand">Design<h4></div>
+                                            </td>
+                                            <td class="after_rotate">
+                                            <p class="mb-0">Adobe Photoshop</p>
+                                            <p class="mb-0">Adobe Illustrator</p>
+                                        </td>
+                                    </tr>
+                                </table>                            
+                            </div>
+                            <div class="row justify-content-start align-items-center">
+                                <table>
+                                    <tr>
+                                        <td class="rotate_right">
+                                            <div><h4 class="red_brand">Technologies<h4></div>
+                                            </td>
+                                            <td class="after_rotate">
+                                            <p class="mb-0">HTML 5</p>
+                                            <p class="mb-0">CSS 3</p>
+                                            <p class="mb-0">Javascript</p>
+                                            <p class="mb-0">Bootstrap</p>
+                                            <p class="mb-0">Google Analitycs</p>
+                                            <p class="mb-0">Google Business</p>
+                                            <p class="mb-0">Github</p>
+                                            <p class="mb-0">Firebase</p>
+                                            <p class="mb-0">Brackets</p>
+                                            <p class="mb-0">Visual Studio Code</p>
+                                        </td>
+                                    </tr>
+                                </table>                            
+                            </div>
+                            <div class="row justify-content-center align-items-center psm-0 pr-5 ">
+                                <a class="mob-text-center" href="https://cdtbigdata.com/" target="_blank">Link to project</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 msmt-3 ">
+                            <img class="w-100 " src="./images/wait.gif " data-src="./images/sections/section2-1.png" alt="Half Image">
+                            <img class="w-100 " src="./images/wait.gif " data-src="./images/sections/section2-2.png" alt="Other half Image">
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="col-2 col-sm-2 col-md-2 col-lg-1 right-option h-100">
+                    <div id="click2" class="row flex-fill justify-content-center align-items-center h-100 option-right" onclick="app_navigator('section2','section3','Information Techonologies')">
+                        <p class="bi-arrow-right ">Next</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section3" class=" h-100">
+        <div class="container-fluid h-100">
+            <div class="row flex-fill justify-content-center align-items-top mt-5 h-100">
+                <div class="col-2 col-sm-2 col-md-2 col-lg-1 right-option h-100">
+                    <div id="menu5" class="row flex-fill justify-content-center align-items-center h-100 option-right" onclick="app_navigator('section3','section2','Information Techonologies')">
+                        <p class="bi-arrow-left">Prev</p>
+                    </div>
+                </div>
+                <div class="col-8 col-sm-8 col-md-8 col-lg-10">
+                    <div class="row flex-fill justify-content-center align-items-center msmt-3">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-4 ">
+                            <div class="row justify-content-start align-items-center pb-5">
+                                <table>
+                                    <tr>
+                                        <td class="rotate_left">
+                                            <div><h4>Project</h4></div>
+                                            </td>
+                                            <td class="after_rotate">
+                                            <p class="mb-0 text-justify"><span class="red_brand">Requirement: </span>Add a contact page to the main page for access from email signature or QR codes.</p>
+                                            <p class="mb-0 text-justify"><span class="red_brand">Role: </span>User Experience, User Interface, Development and SEO</p>
+                                        </td>
+                                    </tr>
+                                </table>                            
+                            </div>
+                            <div class="row justify-content-start align-items-center pb-5">
+                                <table>
+                                    <tr>
+                                        <td class="rotate_right">
+                                            <div><h4 class="red_brand">Design</h4></div>
+                                            </td>
+                                            <td class="after_rotate">
+                                            <p class="mb-0">Adobe Photoshop</p>
+                                            <p class="mb-0">Adobe Illustrator</p>
+                                        </td>
+                                    </tr>
+                                </table>                            
+                            </div>
+                            <div class="row justify-content-start align-items-center">
+                                <table>
+                                    <tr>
+                                        <td class="rotate_right">
+                                            <div><h4 class="red_brand">Technologies</h4></div>
+                                            </td>
+                                            <td class="after_rotate">
+                                            <p class="mb-0">HTML 5</p>
+                                            <p class="mb-0">CSS 3</p>
+                                            <p class="mb-0">Javascript</p>
+                                            <p class="mb-0">Bootstrap</p>
+                                            <p class="mb-0">Google Analitycs</p>
+                                            <p class="mb-0">Google Business</p>
+                                            <p class="mb-0">Github</p>
+                                            <p class="mb-0">Firebase</p>
+                                            <p class="mb-0">Brackets</p>
+                                            <p class="mb-0">Visual Studio Code</p>
+                                        </td>
+                                    </tr>
+                                </table>                            
+                            </div>
+                            <div class="row justify-content-center align-items-center psm-0 pr-5 ">
+                                <a class="mob-text-center" href="https://cdtbigdata.com/Pages/contact.html?id=1" target="_blank">Link to project</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-4 msmt-3 ">
+                            <img class="w-100" src="./images/wait.gif" data-src="./images/sections/section3.png" alt="Contact Page image">
+
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-2 col-sm-2 col-md-2 col-lg-1 right-option h-100">
+                    <div id="click2" class="row flex-fill justify-content-center align-items-center h-100 option-right" onclick="app_navigator('section3','section4','Information Techonologies')">
+                        <p class="bi-arrow-right">Next</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section4" class=" h-100">
+        <div class="container-fluid h-100">
+            <div class="row flex-fill justify-content-center align-items-top mt-5 h-100">
+                <div class="col-2 col-sm-2 col-md-2 col-lg-1 right-option h-100">
+                    <div id="menu5" class="row flex-fill justify-content-center align-items-center h-100 option-right" onclick="app_navigator('section4','section3','Information Techonologies')">
+                        <p class="bi-arrow-left">Prev</p>
+                    </div>
+                </div>
+                <div class="col-8 col-sm-8 col-md-8 col-lg-10">
+                    <div class="row flex-fill justify-content-around align-items-center msmt-3">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-5 ">
+                            <div class="row justify-content-start align-items-center pb-5">
+                                <table>
+                                    <tr>
+                                        <td class="rotate_left">
+                                            <div><h4 >Project</h4></div>
+                                            </td>
+                                            <td class="after_rotate">
+                                            <p class="mb-0 text-justify"><span class="red_brand">Requirement: </span>Creation of ERP platform.</p>
+                                            <p class="mb-0 text-justify"><span class="red_brand">Role: </span>User Experience, User Interface, Front End Development, Implementation, Database Administration and System Adminitration</p>
+                                        </td>
+                                    </tr>
+                                </table>                            
+                            </div>
+                            <div class="row justify-content-start align-items-center pb-5">
+                                <table>
+                                    <tr>
+                                        <td class="rotate_right">
+                                            <div><h4 class="red_brand">Design</h4></div>
+                                            </td>
+                                            <td class="after_rotate">
+                                            <p class="mb-0">Adobe Photoshop</p>
+                                            <p class="mb-0">Adobe Illustrator</p>
+                                        </td>
+                                    </tr>
+                                </table>                            
+                            </div>
+                            <div class="row justify-content-start align-items-center">
+                                <table>
+                                    <tr>
+                                        <td class="rotate_right">
+                                            <div><h4 class="red_brand">Technologies</h4></div>
+                                            </td>
+                                            <td class="after_rotate">
+                                            <p class="mb-0">HTML 5</p>
+                                            <p class="mb-0">CSS 3</p>
+                                            <p class="mb-0">Oracle APEX</p>
+                                            <p class="mb-0">Oracle Database</p>
+                                            <p class="mb-0">Javascript</p>
+                                            <p class="mb-0">Amazon AWS</p>
+                                            <p class="mb-0">Godaddy</p>
+                                            <p class="mb-0">Linux Oracle</p>
+                                        </td>
+                                    </tr>
+                                </table>                            
+                            </div>
+                            <div class="row justify-content-center align-items-center psm-0 pr-5 ">
+                            <p>ask for demo</p>                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-5 msmt-3 ">
+                            
+                            <img class="w-100 " src="./images/wait.gif " data-src="./images/sections/section4.png" alt="Half Image">
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-2 col-sm-2 col-md-2 col-lg-1 right-option h-100">
+                    <div id="click2" class="row flex-fill justify-content-center align-items-center h-100 option-right" onclick="app_navigator('section4','section5','Information Techonologies')">
+                        <p class="bi-arrow-right">Next</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section5" class=" h-100">
+        <div class="container-fluid h-100">
+            <div class="row flex-fill justify-content-center align-items-top mt-5 h-100">
+                <div class="col-2 col-sm-2 col-md-2 col-lg-1 right-option h-100">
+                    <div id="menu5" class="row flex-fill justify-content-center align-items-center h-100 option-right" onclick="app_navigator('section5','section4','Information Techonologies')">
+                        <p class="bi-arrow-left">Prev</p>
+                    </div>
+                </div>
+                <div class="col-8 col-sm-8 col-md-8 col-lg-10">
+                    <div class="row flex-fill justify-content-around align-items-center msmt-3">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-5 ">
+                            <div class="row justify-content-start align-items-center pb-5">
+                                <table>
+                                    <tr>
+                                        <td class="rotate_left">
+                                            <div><h4>Project</h4></div>
+                                            </td>
+                                            <td class="after_rotate">
+                                            <p class="mb-0 text-justify"><span class="red_brand">Requirement: </span>Improve the user experience of daily transactions with the ERP platform by creating a local application for each computer.</p>
+                                            <p class="mb-0 text-justify"><span class="red_brand">Role: </span>User Experience, User Interface, Front End Development, Implementation, Database Administration and System Adminitration</p>
+                                        </td>
+                                    </tr>
+                                </table>                            
+                            </div>
+                            <div class="row justify-content-start align-items-center pb-5 mb-5">
+                                <table>
+                                    <tr>
+                                        <td class="rotate_right">
+                                            <div><h4 class="red_brand">Design</h4></div>
+                                            </td>
+                                            <td class="after_rotate">
+                                            <p class="mb-0">Adobe Photoshop</p>
+                                            <p class="mb-0">Adobe Illustrator</p>
+                                        </td>
+                                    </tr>
+                                </table>                            
+                            </div>
+                            <div class="row justify-content-start align-items-center">
+                                <table>
+                                    <tr>
+                                        <td class="rotate_right">
+                                            <div><h4 class="red_brand">Technologies</h4></div>
+                                            </td>
+                                            <td class="after_rotate">
+                                            <p class="mb-0">Java</p>
+                                            <p class="mb-0">Oracle Database</p>
+                                        </td>
+                                    </tr>
+                                </table>                            
+                            </div>
+                            <div class="row justify-content-center align-items-center psm-0 pr-5 ">
+                                <p>ask for demo</p>                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-5 msmt-3 ">
+                            
+                            <img class="w-100 " src="./images/wait.gif " data-src="./images/sections/section5.png" alt="Half Image">                        </div>
+                    </div>
+
+                </div>
+                <div class="col-2 col-sm-2 col-md-2 col-lg-1 right-option h-100">
+                    <div id="click2" class="row flex-fill justify-content-center align-items-center h-100 option-right" onclick="app_navigator('section5','section6','Information Techonologies')">
+                        <p class="bi-arrow-right">Next</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section6" class=" h-100">
+        <div class="container-fluid h-100">
+            <div class="row flex-fill justify-content-center align-items-top mt-5 h-100">
+                <div class="col-2 col-sm-2 col-md-2 col-lg-1 right-option h-100">
+                    <div id="menu5" class="row flex-fill justify-content-center align-items-center h-100 option-right" onclick="app_navigator('section6','section5','Information Techonologies')">
+                        <p class="bi-arrow-left">Prev</p>
+                    </div>
+                </div>
+                <div class="col-8 col-sm-8 col-md-8 col-lg-10">
+                    <div class="row flex-fill justify-content-around align-items-center msmt-3">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-5 ">
+                            <div class="row justify-content-start align-items-center pb-5">
+                                <table>
+                                    <tr>
+                                        <td class="rotate_left">
+                                            <div><h4>Project</h4></div>
+                                            </td>
+                                        <td class="after_rotate">
+                                            <p class=" mb-0 text-justify"><span class="red_brand">Requirement: </span>The requirement was a user friendly design oriented to Human Resources department, with the aim of improving relations between the employees and the company. it consist of rewarding employees who contribute great ideas to improve the company. For this project i was a hald of the team.</p>
+                                            <p class="text-justify"><span class="red_brand">Role: </span>User Experience and User Interface</p>
+                                        </td>
+                                    </tr>
+                                </table>                            
+                            </div>
+                            <div class="row justify-content-start align-items-center mb-4 pb-5">
+                                <table>
+                                    <tr>
+                                        <td class="rotate_right">
+                                            <div><h4 class="red_brand">Design</h4></div>
+                                            </td>
+                                            <td class="after_rotate">
+                                            <p class="mb-0">Adobe Photoshop</p>
+                                            <p class="mb-0">Adobe Illustrator</p>
+                                            <p class="mb-0">Web mockup tool</p>
+                                        </td>
+                                    </tr>
+                                </table>                            
+                            </div>
+                            <div class="row justify-content-start align-items-center">
+                                <table>
+                                    <tr>
+                                        <td class="rotate_right">
+                                            <div><h4 class="red_brand">Technologies</h4></div>
+                                            </td>
+                                            <td class="after_rotate">
+                                            <p class="mb-0">The client set the project on stand by and it never reached development</p>
+                                        </td>
+                                    </tr>
+                                </table>                            
+                            </div>
+                            <div class="row justify-content-center align-items-center psm-0 pr-5 "> 
+                                <p>ask for demo</p>                           
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-4 msmt-3 ">
+                            <img class="w-100 " src="./images/wait.gif " data-src="./images/sections/section6.png" alt="ANT project image">                        </div>
+                    </div>
+                </div>
+                <div class="col-2 col-sm-2 col-md-2 col-lg-1 right-option h-100">
+                    <div id="click2" class="row flex-fill justify-content-center align-items-center h-100 option-right" onclick="app_navigator('section6','section7','Information Techonologies')">
+                        <p class="bi-arrow-right">Next</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section7" class=" h-100">
+        <div class="container-fluid h-100">
+            <div class="row flex-fill justify-content-center align-items-top mt-5 h-100">
+                <div class="col-2 col-sm-2 col-md-2 col-lg-1 right-option h-100">
+                    <div id="menu5" class="row flex-fill justify-content-center align-items-center h-100 option-right" onclick="app_navigator('section7','section6','Information Techonologies')">
+                        <p class="bi-arrow-left">Prev</p>
+                    </div>
+                </div>
+                <div class="col-8 col-sm-8 col-md-8 col-lg-10">
+                    <div class="row flex-fill justify-content-around align-items-center msmt-3">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-5 ">
+                            <div class="row justify-content-start align-items-center pb-5">
+                                <table>
+                                    <tr>
+                                        <td class="rotate_left">
+                                            <div><h4>Project</h4></div>
+                                            </td>
+                                            <td class="after_rotate">
+                                            <p class=" mb-0 text-justify"><span class="red_brand">Requirement: </span>The company required a user friendly system to manage the monthly closure of each month of multiple distributor, creting a closing proccess and tereby improving data integrity and timing of monthly proccess. The platform is under development by the developer team..</p>
+                                            <p class="text-justify"><span class="red_brand">Role: </span>User Experience and User Interface</p>
+                                        </td>
+                                    </tr>
+                                </table>                            
+                            </div>
+                            <div class="row justify-content-start align-items-center pb-5">
+                                <table>
+                                    <tr>
+                                        <td class="rotate_right">
+                                            <div><h4 class="red_brand">Design</h4></div>
+                                            </td>
+                                            <td class="after_rotate">
+                                            <p class="mb-0">Adobe Photoshop</p>
+                                            <p class="mb-0">Adobe Illustrator</p>
+                                        </td>
+                                    </tr>
+                                </table>                            
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-5 msmt-3 ">
+                            <img class="w-100 " src="./images/wait.gif " data-src="./images/sections/section7.png" alt="ANT project image">                        </div>
+                    </div>
+                </div>
+                <div class="col-2 col-sm-2 col-md-2 col-lg-1 right-option h-100">
+                    <div id="click2" class="row flex-fill justify-content-center align-items-center h-100 option-right" onclick="app_navigator('section7','section8','Graphic Design')">
+                        <p class="bi-arrow-right">Next</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section8" class=" h-100">
+        <div class="container-fluid h-100">
+            <div class="row flex-fill justify-content-left align-items-top mt-5 h-100">
+                <div class="col-2 col-sm-2 col-md-2 col-lg-1 right-option h-100">
+                    <div id="menu5" class="row flex-fill justify-content-center align-items-center h-100 option-right" onclick="app_navigator('section8','section7','Information Technologies')">
+                        <p class="bi-arrow-left">Prev</p>
+                    </div>
+                </div>
+                <div class="col-8 col-sm-8 col-md-8 col-lg-11">
                     <div class="row justify-content-center align-items-center">
                         <div class="col-12 ">
                             <div class="row justify-content-center ">
                                 <div class="col-12 ">
-                                    <div class="row align-items-end mob-justify-content-center">
-                                        <h5 class="w-100 text-right mob-text-center p-0 m-0 font-weight-bold">GRAPHIC DESIGN</h5>
-                                    </div>
-                                    <div class="row justify-content-center msmt-3">
-                                        <h5>BRANDING</h5>
-                                    </div>
                                     <div class="row  justify-content-center">
-                                        <p class="m-0">Corporative Identity | Brand Book | Stationery | Signature (image, HTML) </p>
+                                        <p class="m-0">Corporative Identity | Brand Book | Statione) </p>
                                     </div>
                                 </div>
                             </div>
@@ -144,257 +554,136 @@
                     <div class="row flex-fill justify-content-center align-items-center msmt-3">
                         <div class="col-12 ">
                             <div class="row bg-white justify-content-center align-items-top">
-                                <div class="col-12 col-sm-12 col-md-5 col-lg-4">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-8">
                                     <div class="row justify-content-center">
-                                        <div class="col-12">
+                                        <div class="col-12 col-sm-6 col-md-6 col lg-6">
                                             <div class="row ">
                                                 <img class="w-100 " src="./images/wait.gif " data-src="./images/section5-1.png" alt="Half Image">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-md-6 col lg-6">
+                                            <div class="row ">
                                                 <img class="w-100 " src="./images/wait.gif " data-src="./images/section5-2.png" alt="Other half Image">
-                                            </div>
-                                        </div>
+
+                                                </div>
+                                                </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm-12 col-md-6 col-lg-5">
-                                    <div class="row justify-content-center align-items-center ">
-                                        <div class="col-6 col-sm-6 col-md-6 col-lg-4">
-                                            <div class="row justify-content-center align-items-center ">
-                                                <img class="card-img-top p-3 w-dynamic " src="./images/wait.gif " data-src="./images/logo-vitalis.jpg " alt="Vitalis Imagotype ">
-
+                                </div>
+                                </div>
+                                <div class="row bg-white justify-content-center align-items-top">
+                                    <div class="col-12 col-sm-12 col-md-8 col-lg-9">
+                                    <div class="row justify-content-around align-items-center ">
+                                        <div class="col-6 col-sm-3 col-md-3 col-lg-2">
+                                            <div class="row justify-content-around align-items-center ">
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+                                                    <div class="row justify-content-center align-items-center ">
+                                                        <img class="card-img-top p-3 w-dynamic " src="./images/wait.gif " data-src="./images/logo-vitalis.jpg " alt="Vitalis Imagotype ">
+                                                    </div>
+                                                </div>                      
                                             </div>
                                         </div>
-                                        <div class="col-6 col-sm-6 col-md-5 col-lg-4">
+                                        <div class="col-6 col-sm-3 col-md-3 col-lg-2">
                                             <div class="row justify-content-center align-items-center ">
-                                                <img class="card-img-top p-3 w-dynamic " src="./images/wait.gif " data-src="./images/logo-itaso.png " alt="Itaso Imagotype ">
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+                                                    <div class="row justify-content-around align-items-center ">
+                                                        <img class="card-img-top p-3 w-dynamic " src="./images/wait.gif " data-src="./images/logo-itaso.png " alt="Itaso Imagotype ">
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="col-6 col-sm-6 col-md-5 col-lg-4">
+                                        <div class="col-6 col-sm-3 col-md-3 col-lg-2">
                                             <div class="row justify-content-center align-items-center ">
-                                                <img class="card-img-top p-3 w-dynamic " src="./images/wait.gif " data-src="./images/logo-btech.png " alt="B-Tech Imagotype ">
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+                                                    <div class="row justify-content-around align-items-center ">
+                                                        <img class="card-img-top p-3 w-dynamic " src="./images/wait.gif " data-src="./images/logo-mm.png " alt="Multiservices Imagotype ">
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="col-6 col-sm-6 col-md-5 col-lg-4">
+                                        <div class="col-6 col-sm-3 col-md-3 col-lg-2">
                                             <div class="row justify-content-center align-items-center ">
-                                                <img class="card-img-top p-3 w-dynamic " src="./images/wait.gif " data-src="./images/logo-chimuelo.png " alt="Chimuelo (Toothless) Imagotype ">
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+                                                    <div class="row justify-content-around align-items-center ">
+                                                        <img class="card-img-top p-3 w-dynamic " src="./images/wait.gif " data-src="./images/logo-conus.png " alt="Conus Studio Imagotype ">
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="col-6 col-sm-6 col-md-5 col-lg-4">
+                                        <div class="col-6 col-sm-3 col-md-3 col-lg-2">
                                             <div class="row justify-content-center align-items-center ">
-                                                <img class="card-img-top p-3 w-dynamic " src="./images/wait.gif " data-src="./images/logo-mm.png " alt="Multiservices Imagotype ">
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+                                                    <div class="row justify-content-around align-items-center ">
+                                                        <img class="card-img-top p-3 w-dynamic " src="./images/wait.gif " data-src="./images/logo-btech.png " alt="B-Tech Imagotype ">
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="col-6 col-sm-6 col-md-5 col-lg-4">
+                                        <div class="col-6 col-sm-3 col-md-3 col-lg-2">
                                             <div class="row justify-content-center align-items-center ">
-                                                <img class="card-img-top p-3 w-dynamic " src="./images/wait.gif " data-src="./images/logo-tm.jpg " alt="Martial Temple Imagotype ">
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+                                                    <div class="row justify-content-around align-items-center ">
+                                                        <img class="card-img-top p-3 w-dynamic " src="./images/wait.gif " data-src="./images/logo-adill.png " alt="Developtment Association Imagotype ">
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="col-6 col-sm-6 col-md-5 col-lg-4">
+                                        <div class="col-6 col-sm-3 col-md-3 col-lg-2">
                                             <div class="row justify-content-center align-items-center ">
-                                                <img class="card-img-top p-3 w-dynamic " src="./images/wait.gif " data-src="./images/logo-riemsa.png " alt="Riemsa Imagotype ">
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+                                                    <div class="row justify-content-around align-items-center ">
+                                                        <img class="card-img-top p-3 w-dynamic " src="./images/wait.gif " data-src="./images/logo-chimuelo.png " alt="Chimuelo (Toothless) Imagotype ">
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="col-6 col-sm-6 col-md-5 col-lg-4">
+                                        <div class="col-6 col-sm-3 col-md-3 col-lg-2">
                                             <div class="row justify-content-center align-items-center ">
-                                                <img class="card-img-top p-3 w-dynamic " src="./images/wait.gif " data-src="./images/logo-conus.png " alt="Conus Studio Imagotype ">
-
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+                                                    <div class="row justify-content-around align-items-center ">
+                                                        <img class="card-img-top p-3 w-dynamic " src="./images/wait.gif " data-src="./images/logo-lolek.png " alt="Vitalis Imagotype ">
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="col-6 col-sm-6 col-md-5 col-lg-4">
+                                        <div class="col-6 col-sm-3 col-md-3 col-lg-2">
                                             <div class="row justify-content-center align-items-center ">
-                                                <img class="card-img-top p-3 w-dynamic " src="./images/wait.gif " data-src="./images/logo-adill.png " alt="Developtment Association Imagotype ">
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+                                                    <div class="row justify-content-around align-items-center ">
+                                                        <img class="card-img-top p-3 w-dynamic " src="./images/wait.gif " data-src="./images/logo-riemsa.png " alt="Riemsa Imagotype ">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-sm-3 col-md-3 col-lg-2">
+                                            <div class="row justify-content-center align-items-center ">
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+                                                    <div class="row justify-content-around align-items-center ">
+                                                        <img class="card-img-top p-3 w-dynamic " src="./images/wait.gif " data-src="./images/logo-mv.png " alt="Itaso Imagotype ">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-sm-3 col-md-3 col-lg-2">
+                                            <div class="row justify-content-center align-items-center ">
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+                                                    <div class="row justify-content-around align-items-center ">
+                                                        <img class="card-img-top p-3 w-dynamic " src="./images/wait.gif " data-src="./images/logo-tm.jpg " alt="Martial Temple Imagotype ">
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-2 col-sm-2 col-md-2 col-lg-1 right-option h-100">
-                    <div id="click2" class="row flex-fill justify-content-center align-items-center h-100 option-right">
-                        <p class="bi-arrow-right">Next</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="section3 h-100">
-        <div class="container-fluid h-100">
-            <div class="row flex-fill justify-content-center align-items-top h-100">
-                <div class="col-2 col-sm-2 col-md-2 col-lg-1 right-option h-100">
-                    <div id="menu5" class="row flex-fill justify-content-center align-items-center h-100 option-right">
-                        <p class="bi-arrow-left">Prev</p>
-                    </div>
-                </div>
-                <div class="col-8 col-sm-8 col-md-8 col-lg-10">
-                    <div class="row justify-content-center align-items-end">
-                        <div class="col-12 ">
-                            <div class="row justify-content-end ">
-                                <div class="col-12">
-                                    <div class="row justify-content-end mob-justify-content-center">
-                                        <h5 class="m-0 p-2 text-right mob-text-center font-weight-bold">WEB DESIGN AND DEVELOPMENT</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row flex-fill justify-content-center align-items-center msmt-3">
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-4 ">
-                            <div class="row justify-content-end align-items-center psm-0 pr-5 ">
-                                <h5 class="mob-text-center text-right mb-0 ">DESIGN AND DEVELOPMENT</h5>
-                            </div>
-                            <div class="row justify-content-end align-items-center psm-0 pr-5 ">
-                                <a class="mob-text-center" href="https://cdtbigdata.com/" target="_blank">CDT Big Data & Business Intelligence</a>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 msmt-3 ">
-                            <img class="w-100 " src="./images/wait.gif " data-src="./images/section4-1.png" alt="Half Image">
-                            <img class="w-100 " src="./images/wait.gif " data-src="./images/section4-2.png" alt="Other half Image">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-2 col-sm-2 col-md-2 col-lg-1 right-option h-100">
-                    <div id="click3" class="row flex-fill justify-content-center align-items-center h-100 option-right">
-                        <p class="bi-arrow-right">Next</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section class="section4 h-100">
-        <div class="container-fluid h-100">
-            <div class="row flex-fill justify-content-center align-items-top h-100">
-                <div class="col-2 col-sm-2 col-md-2 col-lg-1 right-option h-100">
-                    <div id="menu4" class="row flex-fill justify-content-center align-items-center h-100 option-right">
-                        <p class="bi-arrow-left">Prev</p>
-                    </div>
-                </div>
-                <div class="col-8 col-sm-8 col-md-8 col-lg-10">
-                    <div class="row justify-content-center align-items-center">
-                        <div class="col-12 ">
-                            <div class="row justify-content-end ">
-                                <div class="col-12 ">
-                                    <div class="row justify-content-end mob-justify-content-center">
-                                        <h5 class="text-right mob-text-center m-0 p-2 font-weight-bold">UX/UI DESIGN AND DEVELOPMENT</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row flex-fill justify-content-center align-items-center pt-5 ">
-                        <div class="col-12 ">
-                            <div class="row bg-white justify-content-center align-items-center">
-                                <div class="col-12 col-sm-12 col-md-12 col-lg-3">
-                                    <div class="row  justify-content-center">
-                                        <div class="col-10 transitiontxtlefts4">
-                                            <div class="row justify-content-end">
-                                                <h5>ROLE</h5>
-                                            </div>
-                                            <div class="row justify-content-end">
-                                                <p class="text-right normal-text">User research, UX Designer, Front End Developer, Implementer and Manager.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-12 col-md-12 col-lg-4 pl-6 msmt-3">
-                                    <div class="row  justify-content-center align-items-center">
-                                        <img class="w-100" src="./images/wait.gif" data-src="./images/HETEC_imac.png" alt="HETEC previous ">
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-12 col-md-12 col-lg-5 msmt-3">
-                                    <div class="row justify-content-center">
-                                        <div class="col-10 transitiontxtrights4">
-                                            <div class="row">
-                                                <h5>DETAILS</h5>
-                                            </div>
-                                            <div class="row">
-                                                <p class="normal-text">Design and Front End Development to update and improve existing ERP Platform.</p>
-                                            </div>
-                                            <div class="row">
-                                                <p class="normal-text">ERP for business managment.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-2 col-sm-2 col-md-2 col-lg-1 right-option h-100">
-                    <div id="click4" class="row flex-fill justify-content-center align-items-center h-100 option-right">
-                        <p class="bi-arrow-right">Next</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section5 h-100">
-        <div class="container-fluid  h-100">
-            <div class="row flex-fill justify-content-center align-items-top  h-100">
-                <div class="col-2 col-sm-2 col-md-2 col-lg-1 right-option h-100">
-                    <div id="menu3" class="row flex-fill justify-content-center align-items-center h-100 option-right">
-                        <p class="bi-arrow-left">Prev</p>
-                    </div>
-                </div>
-                <div class="col-8 col-sm-10 col-md-10 col-lg-11">
-                    <div class="row justify-content-center align-items-center">
-                        <div class="col-12 ">
-                            <div class="row justify-content-end ">
-                                <div class="col-12 ">
-                                    <div class="row justify-content-end mob-justify-content-center">
-                                        <h5 class="text-right mob-text-center m-0 p-2 font-weight-bold ">UX/UI DESIGN AND DEVELOPMENT</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row flex-fill justify-content-center align-items-center pt-5 ">
-                        <div class="col-12 ">
-                            <div class="row bg-white justify-content-center align-items-center">
-                                <div class="col-12 col-sm-12 col-md-12 col-lg-3 ">
-                                    <div class="row justify-content-center transcontainertxt">
-                                        <div class="col-10 transitiontxtlefts5">
-                                            <div class="row justify-content-end">
-                                                <h5>ROLE</h5>
-                                            </div>
-                                            <div class="row justify-content-end">
-                                                <p class="text-right normal-text">User research, UX Designer and Graphic Designer</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-sm-6 col-md-6 col-lg-4 pl-6 msmt-3">
-                                    <div class="row justify-content-center align-items-center ">
-                                        <img class="w-100 " src="./images/wait.gif " data-src="./images/ANT_ipad.png " alt="ANT Previous">
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-12 col-md-12 col-lg-5 msmt-3">
-                                    <div class="row justify-content-center transcontainertxt">
-                                        <div class="col-10 transitiontxtrights5">
-                                            <div class="row ">
-                                                <h5>DETAILS </h5>
-                                            </div>
-                                            <div class="row ">
-                                                <p class="normal-text">The requirement was a user friendly design for a project for Human Ressources department, with the objetive to improve the relations between the employees and the company.</p>
-                                            </div>
-                                            <div class="row ">
-                                                <p class="normal-text">It consist in a platform oriented on give awards to employees whom gives great ideas in order to improve de company.</p>
-                                            </div>
-                                            <div class=" row ">
-                                                <p class="normal-text">For this project I was a half of the team.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <section class="selfmade h-100">
+    <section id="selfmade" class="h-100">
         <div class="container-fluid h-100">
             <div class="row flex-fill justify-content-center align-items-top h-100">
                 <div class="col-12 ">
@@ -431,7 +720,7 @@
             </div>
         </div>
     </section>
-    <section class="resume h-100">
+    <section id="resume" class="h-100">
         <div class="container-fluid h-100">
             <div class="row flex-fill justify-content-center align-items-center h-75">
                 <div class="col-10 col-sm-10 col-md-10 col-lg-11 ">
@@ -494,14 +783,14 @@
                     </div>
                 </div>
                 <div class="col-2 col-sm-2 col-md-2 col-lg-1 right-option h-100">
-                    <div id="resumeopt" class="row flex-fill justify-content-center align-items-center h-100 option-right">
-                        <p class="bi-arrow-right">Next</p>
+                    <div id="resumeopt" class="row flex-fill justify-content-center align-items-center h-100 option-right" onclick="app_navigator('resume','resume2','Resume')">
+                        <p class="bi-arrow-right" >Next</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="resume2 h-100">
+    <section id="resume2" class="h-100">
         <div class="container-fluid  h-100">
             <div class="row flex-fill justify-content-center align-items-center">
                 <div class="col-2 col-sm-2 col-md-2 col-lg-1 h-100">
