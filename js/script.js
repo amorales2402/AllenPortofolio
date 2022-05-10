@@ -45,6 +45,14 @@ function add_transitiontxt() {
     }
 }
 function app_navigator(current_section, next_section, tittle_text) {
+    if (current_section == "section") {
+        if (current_section_temp == null) {
+            current_section = "section1";
+        }
+        else {
+            current_section = current_section_temp;
+        }
+    }
     var current_section_html = document.getElementById(current_section);
     var next_section_html = document.getElementById(next_section);
     var tittle_text_html = document.getElementById("tittle_menu");
@@ -52,16 +60,6 @@ function app_navigator(current_section, next_section, tittle_text) {
     var resume = document.getElementById("resume_option");
     var menu = document.getElementById("navbar");
     remove_transitiontxt();
-    if (current_section == "section") {
-        if (current_section_temp == null) {
-            animatelogo();
-            current_section = "section1";
-        }
-        else {
-            removelogo();
-            current_section = current_section_temp;
-        }
-    }
     if (current_section_html != null) {
         current_section_html.style.display = "none";
         if (current_section == "section1") {
@@ -74,6 +72,7 @@ function app_navigator(current_section, next_section, tittle_text) {
     if (home != null) {
         if (next_section == "section1") {
             home.style.display = "none";
+            animatelogo();
             if (resume != null) {
                 resume.style.display = "block";
             }
