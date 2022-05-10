@@ -279,6 +279,24 @@ a {
   overflow: hidden;
 }
 
+.transitiontxtright {
+  margin-left: 1000px;
+}
+
+.transtxtright {
+  -webkit-transition: margin 0.5s linear;
+  -moz-transition: margin 0.5s linear;
+  transition: margin 0.5s linear;
+  margin-left: 0px;
+}
+
+
+
+
+
+
+
+
 .transitiontxtrights3,
 .transitiontxtrights4,
 .transitiontxtrights5 {

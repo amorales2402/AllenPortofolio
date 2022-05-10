@@ -6,10 +6,14 @@ function animatelogo() {
     const element_left = document.getElementById("transitionleft");
     const element_right = document.getElementById("transitionright");
     if (element_left != null) {
-        element_left.classList.add("translogoleft");
+        setTimeout(() => {
+            element_left.classList.add("translogoleft");
+        }, 1);
     }
     if (element_right != null) {
-        element_right.classList.add("translogoright");
+        setTimeout(() => {
+            element_right.classList.add("translogoright");
+        }, 1);
     }
 }
 function removelogo() {
@@ -26,21 +30,38 @@ function removelogo() {
         container_right.classList.remove("transcontright");
     }
 }
-function app_navigator(current_section, next_section, tittle_text) {
-    if (current_section == "section") {
-        if (current_section_temp == null) {
-            current_section = "section1";
-        }
-        else {
-            current_section = current_section_temp;
-        }
+function remove_transitiontxt() {
+    var transition = document.querySelectorAll(".transitiontxtright");
+    for (const trans of transition) {
+        trans.classList.remove("transtxtright");
     }
+}
+function add_transitiontxt() {
+    var transition = document.querySelectorAll(".transitiontxtright");
+    for (const trans of transition) {
+        setTimeout(() => {
+            trans.classList.add("transtxtright");
+        }, 1);
+    }
+}
+function app_navigator(current_section, next_section, tittle_text) {
     var current_section_html = document.getElementById(current_section);
     var next_section_html = document.getElementById(next_section);
     var tittle_text_html = document.getElementById("tittle_menu");
     var home = document.getElementById("home_option");
     var resume = document.getElementById("resume_option");
     var menu = document.getElementById("navbar");
+    remove_transitiontxt();
+    if (current_section == "section") {
+        if (current_section_temp == null) {
+            animatelogo();
+            current_section = "section1";
+        }
+        else {
+            removelogo();
+            current_section = current_section_temp;
+        }
+    }
     if (current_section_html != null) {
         current_section_html.style.display = "none";
         if (current_section == "section1") {
@@ -76,9 +97,7 @@ function app_navigator(current_section, next_section, tittle_text) {
             }
         }
     }
-    console.log(next_section);
-    console.log(resume);
-    if ((next_section == "resume")) {
+    if (next_section == "resume") {
         if (resume != null) {
             resume.style.display = "none";
         }
@@ -88,9 +107,11 @@ function app_navigator(current_section, next_section, tittle_text) {
         //    tittle_text_html.style.display = "flex";
         tittle_text_html.innerHTML = tittle_text;
     }
+    add_transitiontxt();
     //}
     current_section_temp = next_section;
 }
+function transitxt() { }
 window.onload = function () {
     animatelogo();
     var allimages = document.getElementsByTagName("img");
