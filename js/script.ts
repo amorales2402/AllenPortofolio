@@ -8,12 +8,12 @@ function animatelogo() {
   if (element_left != null) {
     setTimeout(() => {
       element_left.classList.add("translogoleft");
-    }, 1); 
+    }, 1);
   }
   if (element_right != null) {
     setTimeout(() => {
       element_right.classList.add("translogoright");
-    }, 1); 
+    }, 1);
   }
 }
 
@@ -33,16 +33,27 @@ function removelogo() {
 }
 
 function remove_transitiontxt() {
-  var transition = document.querySelectorAll(".transitiontxtright");
-  for (const trans of transition) {
-      trans.classList.remove("transtxtright");
+  var transitionr = document.querySelectorAll(".transitiontxtright");
+  var transitionl = document.querySelectorAll(".transitiontxtleft");
+  for (const transr of transitionr) {
+    transr.classList.remove("transtxtright");
+  }
+  for (const transl of transitionl) {
+    transl.classList.remove("transtxtleft");
   }
 }
 function add_transitiontxt() {
-  var transition = document.querySelectorAll(".transitiontxtright");
-  for (const trans of transition) {
+  var transitionr = document.querySelectorAll(".transitiontxtright");
+  var transitionl = document.querySelectorAll(".transitiontxtleft");
+
+  for (const transr of transitionr) {
     setTimeout(() => {
-      trans.classList.add("transtxtright");
+      transr.classList.add("transtxtright");
+    }, 1);
+  }
+  for (const transl of transitionl) {
+    setTimeout(() => {
+      transl.classList.add("transtxtleft");
     }, 1);
   }
 }
@@ -52,7 +63,6 @@ function app_navigator(
   next_section: string,
   tittle_text: string
 ) {
-
   if (current_section == "section") {
     if (current_section_temp == null) {
       current_section = "section1";
@@ -69,7 +79,6 @@ function app_navigator(
   var menu = document.getElementById("navbar");
 
   remove_transitiontxt();
-  
 
   if (current_section_html != null) {
     current_section_html.style.display = "none";

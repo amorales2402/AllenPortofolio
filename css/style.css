@@ -290,45 +290,18 @@ a {
   margin-left: 0px;
 }
 
-
-
-
-
-
-
-
-.transitiontxtrights3,
-.transitiontxtrights4,
-.transitiontxtrights5 {
-  float: left;
-  height: 100%;
+.transitiontxtleft {
   margin-left: -1000px;
 }
 
-.transtxtrights3,
-.transtxtrights4,
-.transtxtrights5 {
+.transtxtleft {
   -webkit-transition: margin 0.5s linear;
   -moz-transition: margin 0.5s linear;
   transition: margin 0.5s linear;
   margin-left: 0px;
 }
 
-.transitiontxtlefts3,
-.transitiontxtlefts4,
-.transitiontxtlefts5 {
-  float: right;
-  margin-right: -1000px;
-}
 
-.transtxtlefts3,
-.transtxtlefts4,
-.transtxtlefts5 {
-  -webkit-transition: margin 0.5s linear;
-  -moz-transition: margin 0.5s linear;
-  transition: margin 0.5s linear;
-  margin-right: 0px;
-}
 
 @keyframes example {
   0% {

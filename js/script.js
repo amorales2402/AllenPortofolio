@@ -31,16 +31,26 @@ function removelogo() {
     }
 }
 function remove_transitiontxt() {
-    var transition = document.querySelectorAll(".transitiontxtright");
-    for (const trans of transition) {
-        trans.classList.remove("transtxtright");
+    var transitionr = document.querySelectorAll(".transitiontxtright");
+    var transitionl = document.querySelectorAll(".transitiontxtleft");
+    for (const transr of transitionr) {
+        transr.classList.remove("transtxtright");
+    }
+    for (const transl of transitionl) {
+        transl.classList.remove("transtxtleft");
     }
 }
 function add_transitiontxt() {
-    var transition = document.querySelectorAll(".transitiontxtright");
-    for (const trans of transition) {
+    var transitionr = document.querySelectorAll(".transitiontxtright");
+    var transitionl = document.querySelectorAll(".transitiontxtleft");
+    for (const transr of transitionr) {
         setTimeout(() => {
-            trans.classList.add("transtxtright");
+            transr.classList.add("transtxtright");
+        }, 1);
+    }
+    for (const transl of transitionl) {
+        setTimeout(() => {
+            transl.classList.add("transtxtleft");
         }, 1);
     }
 }
