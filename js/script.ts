@@ -35,16 +35,23 @@ function removelogo() {
 function remove_transitiontxt() {
   var transitionr = document.querySelectorAll(".transitiontxtright");
   var transitionl = document.querySelectorAll(".transitiontxtleft");
+  var transitiont = document.querySelectorAll(".transitiontxttop");
+
   for (const transr of transitionr) {
     transr.classList.remove("transtxtright");
   }
   for (const transl of transitionl) {
     transl.classList.remove("transtxtleft");
   }
+  for (const transt of transitiont) {
+    transt.classList.remove("transtxttop");
+  }
 }
 function add_transitiontxt() {
   var transitionr = document.querySelectorAll(".transitiontxtright");
   var transitionl = document.querySelectorAll(".transitiontxtleft");
+  var transitiont = document.querySelectorAll(".transitiontxttop");
+
 
   for (const transr of transitionr) {
     setTimeout(() => {
@@ -54,6 +61,11 @@ function add_transitiontxt() {
   for (const transl of transitionl) {
     setTimeout(() => {
       transl.classList.add("transtxtleft");
+    }, 1);
+  }
+  for (const transt of transitiont) {
+    setTimeout(() => {
+      transt.classList.add("transtxttop");
     }, 1);
   }
 }
