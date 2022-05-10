@@ -281,24 +281,30 @@ a {
 
 .transitiontxtright {
   margin-left: 1000px;
+  opacity:0;
 }
 
 .transtxtright {
-  -webkit-transition: margin 0.5s linear;
-  -moz-transition: margin 0.5s linear;
-  transition: margin 0.5s linear;
   margin-left: 0px;
+  opacity: 1;
+  -webkit-transition: margin 0.5s ease, opacity 1.5s ease;
+  -moz-transition: margin 0.5s ease, opacity 1.5s ease;
+  transition: margin 0.5s ease, opacity 1.5s ease;
+ 
 }
 
 .transitiontxtleft {
   margin-left: -1000px;
+  opacity:0;
 }
 
 .transtxtleft {
-  -webkit-transition: margin 0.5s linear;
-  -moz-transition: margin 0.5s linear;
-  transition: margin 0.5s linear;
   margin-left: 0px;
+  opacity: 1;
+  -webkit-transition: margin 0.5s ease, opacity 1.5s ease;
+  -moz-transition: margin 0.5s ease, opacity 1.5s ease;
+  transition: margin 0.5s ease, opacity 1.5s ease;
+ 
 }
 
 
