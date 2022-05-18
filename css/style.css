@@ -300,9 +300,9 @@ a {
   animation-duration: 1s;
   animation-fill-mode: forwards;
   opacity: 1;
-  -webkit-transition: opacity 1.5s linear;
-  -moz-transition: opacity 1.5s linear;
-  transition: opacity 1.5s linear;
+  -webkit-transition: opacity 3s linear;
+  -moz-transition: opacity 3s linear;
+  transition: opacity 3s linear;
 }
 .transpageright {
   position: relative;
@@ -310,9 +310,9 @@ a {
   animation-duration: 1s;
   animation-fill-mode: forwards;
   opacity: 1;
-  -webkit-transition: opacity 1.5s linear;
-  -moz-transition: opacity 1.5s linear;
-  transition: opacity 1.5s linear;
+  -webkit-transition: opacity 3s linear;
+  -moz-transition: opacity 3s linear;
+  transition: opacity 3s linear;
 }
 
 @keyframes showsectionleft {
