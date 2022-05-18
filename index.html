@@ -62,10 +62,10 @@
         <div class="navbar-nav-scroll">
             <ul class="navbar-nav bd-navbar-nav flex-row mb-2 mb-lg-0">
                 <li id="home_option" class="nav-item msmr-3 ">
-                    <a  class="nav-link bi-house active" aria-current="page" href="#" onclick="app_navigator('section','section1','Designed and Developed 100% by Allen Morales')"></a>
+                    <a  class="nav-link bi-house active" aria-current="page" href="#" onclick="app_navigator('section','section1','Designed and Developed 100% by Allen Morales','left')"></a>
                 </li>
                 <li id="resume_option" class="nav-item resumeopt msmr-3">
-                    <a  class="nav-link bi-ui-checks" href="#" onclick="app_navigator('section','resume','Resume')">Resume</a>
+                    <a  class="nav-link bi-ui-checks" href="#" onclick="app_navigator('section','resume','Resume','right')">Resume</a>
                 </li>
                 <!--<li class="nav-item selfmadeopt">
                     <a id="selfmade11" class="nav-link bi-exclamation-lg" href="#"  onclick="app_navigator('section','selfmade','')">Must See This</a>
@@ -77,11 +77,11 @@
              
     </header>
 
-    <section id="section1" class="h-100" onclick="app_navigator('section1','section2','Information Techonologies')">
+    <section id="section1" class="h-100" onclick="app_navigator('section1','section2','Information Techonologies','right')">
         <div class="container-fluid ">
             <div class="row normalrow flex-fill justify-content-center align-items-center h-100">
                 <div class="col-12">
-                    <div class=" h-100 row w-100 justify-content-center ">
+                    <div class=" h-100 row w-100 justify-content-center mb-5">
                         <div class="transcontainerleft ">
                             <img id="transitionleft" src="./images/logo/morales.png " alt="Logo ">
                         </div>
@@ -94,7 +94,7 @@
                         </div>
                     </div>
                     <div class="row justify-content-center p-0 m-0 bt-clickme">
-                        <button class=" p-2 btn btn-dark">Click me</button>
+                        <p>Click to continue</p>
                     </div>
                 </div>
             </div>
@@ -120,18 +120,18 @@
         </div>
     </section>
     
-    <section id="section2" class=" h-100">
+    <section id="section2" class=" h-100 transitionpage">
         <div class="container-fluid h-100">
             <div class="row flex-fill justify-content-center align-items-top mt-5 h-100">
                 <div class="col-2 col-sm-2 col-md-2 col-lg-1 right-option h-100">
-                    <div id="menu5" class="row flex-fill justify-content-center align-items-center h-100 option-right" onclick="app_navigator('section2','section1','Designed and Developed 100% by Allen Morales')">
+                    <div id="menu5" class="row flex-fill justify-content-center align-items-center h-100 option-right" onclick="app_navigator('section2','section1','Designed and Developed 100% by Allen Morales','left')">
                         <p class="bi-arrow-left">Prev</p>
                     </div>
                 </div>
                 <div class="col-8 col-sm-8 col-md-8 col-lg-10 ">
                     <div class="row flex-fill justify-content-center align-items-center msmt-3">
                         <div class="col-12 col-sm-12 col-md-12 col-lg-4 ">
-                            <div class="row justify-content-start align-items-center pb-5 transitiontxtright">
+                            <div class="row justify-content-start align-items-center pb-5">
                                 <table>
                                     <tr>
                                         <td class="rotate_left">
@@ -144,7 +144,7 @@
                                     </tr>
                                 </table>                            
                             </div>
-                            <div class="row justify-content-start align-items-center pb-5 transitiontxtright">
+                            <div class="row justify-content-start align-items-center pb-5 ">
                                 <table>
                                     <tr>
                                         <td class="rotate_right">
@@ -157,7 +157,7 @@
                                     </tr>
                                 </table>                            
                             </div>
-                            <div class="row justify-content-start align-items-center transitiontxtright">
+                            <div class="row justify-content-start align-items-center ">
                                 <table>
                                     <tr>
                                         <td class="rotate_right">
@@ -182,7 +182,7 @@
                                 <a class="mob-text-center" href="https://cdtbigdata.com/" target="_blank">Link to project</a>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 msmt-3 transitiontxtleft">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 msmt-3 ">
                             <img class="w-100 " src="./images/wait.gif " data-src="./images/sections/section2-1.png" alt="Half Image">
                             <img class="w-100 " src="./images/wait.gif " data-src="./images/sections/section2-2.png" alt="Other half Image">
                         </div>
@@ -190,25 +190,25 @@
                    
                 </div>
                 <div class="col-2 col-sm-2 col-md-2 col-lg-1 right-option h-100">
-                    <div id="click2" class="row flex-fill justify-content-center align-items-center h-100 option-right" onclick="app_navigator('section2','section3','Information Techonologies')">
+                    <div id="click2" class="row flex-fill justify-content-center align-items-center h-100 option-right" onclick="app_navigator('section2','section3','Information Techonologies','right')">
                         <p class="bi-arrow-right ">Next</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="section3" class=" h-100">
+    <section id="section3" class=" h-100 transitionpage">
         <div class="container-fluid h-100">
             <div class="row flex-fill justify-content-center align-items-top mt-5 h-100">
                 <div class="col-2 col-sm-2 col-md-2 col-lg-1 right-option h-100">
-                    <div id="menu5" class="row flex-fill justify-content-center align-items-center h-100 option-right" onclick="app_navigator('section3','section2','Information Techonologies')">
+                    <div id="menu5" class="row flex-fill justify-content-center align-items-center h-100 option-right" onclick="app_navigator('section3','section2','Information Techonologies','left')">
                         <p class="bi-arrow-left">Prev</p>
                     </div>
                 </div>
                 <div class="col-8 col-sm-8 col-md-8 col-lg-10">
                     <div class="row flex-fill justify-content-center align-items-center msmt-3">
                         <div class="col-12 col-sm-12 col-md-12 col-lg-4 ">
-                            <div class="row justify-content-start align-items-center pb-5 transitiontxtright">
+                            <div class="row justify-content-start align-items-center pb-5 ">
                                 <table>
                                     <tr>
                                         <td class="rotate_left">
@@ -221,7 +221,7 @@
                                     </tr>
                                 </table>                            
                             </div>
-                            <div class="row justify-content-start align-items-center pb-5 transitiontxtright">
+                            <div class="row justify-content-start align-items-center pb-5 ">
                                 <table>
                                     <tr>
                                         <td class="rotate_right">
@@ -234,7 +234,7 @@
                                     </tr>
                                 </table>                            
                             </div>
-                            <div class="row justify-content-start align-items-center transitiontxtright">
+                            <div class="row justify-content-start align-items-center ">
                                 <table>
                                     <tr>
                                         <td class="rotate_right">
@@ -259,7 +259,7 @@
                                 <a class="mob-text-center" href="https://cdtbigdata.com/Pages/contact.html?id=1" target="_blank">Link to project</a>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-4 msmt-3 transitiontxtleft">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-4 msmt-3 ">
                             <img class="w-100" src="./images/wait.gif" data-src="./images/sections/section3.png" alt="Contact Page image">
 
                         </div>
@@ -267,25 +267,25 @@
                     
                 </div>
                 <div class="col-2 col-sm-2 col-md-2 col-lg-1 right-option h-100">
-                    <div id="click2" class="row flex-fill justify-content-center align-items-center h-100 option-right" onclick="app_navigator('section3','section4','Information Techonologies')">
+                    <div id="click2" class="row flex-fill justify-content-center align-items-center h-100 option-right" onclick="app_navigator('section3','section4','Information Techonologies','right')">
                         <p class="bi-arrow-right">Next</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="section4" class=" h-100">
+    <section id="section4" class=" h-100 transitionpage">
         <div class="container-fluid h-100">
             <div class="row flex-fill justify-content-center align-items-top mt-5 h-100">
                 <div class="col-2 col-sm-2 col-md-2 col-lg-1 right-option h-100">
-                    <div id="menu5" class="row flex-fill justify-content-center align-items-center h-100 option-right" onclick="app_navigator('section4','section3','Information Techonologies')">
+                    <div id="menu5" class="row flex-fill justify-content-center align-items-center h-100 option-right" onclick="app_navigator('section4','section3','Information Techonologies','left')">
                         <p class="bi-arrow-left">Prev</p>
                     </div>
                 </div>
                 <div class="col-8 col-sm-8 col-md-8 col-lg-10">
                     <div class="row flex-fill justify-content-around align-items-center msmt-3">
                         <div class="col-12 col-sm-12 col-md-12 col-lg-5 ">
-                            <div class="row justify-content-start align-items-center pb-5 transitiontxtright">
+                            <div class="row justify-content-start align-items-center pb-5 ">
                                 <table>
                                     <tr>
                                         <td class="rotate_left">
@@ -298,7 +298,7 @@
                                     </tr>
                                 </table>                            
                             </div>
-                            <div class="row justify-content-start align-items-center pb-5 transitiontxtright">
+                            <div class="row justify-content-start align-items-center pb-5 ">
                                 <table>
                                     <tr>
                                         <td class="rotate_right">
@@ -311,7 +311,7 @@
                                     </tr>
                                 </table>                            
                             </div>
-                            <div class="row justify-content-start align-items-center transitiontxtright">
+                            <div class="row justify-content-start align-items-center ">
                                 <table>
                                     <tr>
                                         <td class="rotate_right">
@@ -333,7 +333,7 @@
                             <div class="row justify-content-center align-items-center psm-0 pr-5 ">
                             <p>ask for demo</p>                            </div>
                         </div>
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-5 msmt-3 transitiontxtleft">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-5 msmt-3 ">
                             
                             <img class="w-100 " src="./images/wait.gif " data-src="./images/sections/section4.png" alt="Half Image">
                         </div>
@@ -341,25 +341,25 @@
                     
                 </div>
                 <div class="col-2 col-sm-2 col-md-2 col-lg-1 right-option h-100">
-                    <div id="click2" class="row flex-fill justify-content-center align-items-center h-100 option-right" onclick="app_navigator('section4','section5','Information Techonologies')">
+                    <div id="click2" class="row flex-fill justify-content-center align-items-center h-100 option-right" onclick="app_navigator('section4','section5','Information Techonologies','right')">
                         <p class="bi-arrow-right">Next</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="section5" class=" h-100">
+    <section id="section5" class=" h-100 transitionpage">
         <div class="container-fluid h-100">
             <div class="row flex-fill justify-content-center align-items-top mt-5 h-100">
                 <div class="col-2 col-sm-2 col-md-2 col-lg-1 right-option h-100">
-                    <div id="menu5" class="row flex-fill justify-content-center align-items-center h-100 option-right" onclick="app_navigator('section5','section4','Information Techonologies')">
+                    <div id="menu5" class="row flex-fill justify-content-center align-items-center h-100 option-right" onclick="app_navigator('section5','section4','Information Techonologies','left')">
                         <p class="bi-arrow-left">Prev</p>
                     </div>
                 </div>
                 <div class="col-8 col-sm-8 col-md-8 col-lg-10">
                     <div class="row flex-fill justify-content-around align-items-center msmt-3">
                         <div class="col-12 col-sm-12 col-md-12 col-lg-5 ">
-                            <div class="row justify-content-start align-items-center pb-5 transitiontxtright">
+                            <div class="row justify-content-start align-items-center pb-5 ">
                                 <table>
                                     <tr>
                                         <td class="rotate_left">
@@ -372,7 +372,7 @@
                                     </tr>
                                 </table>                            
                             </div>
-                            <div class="row justify-content-start align-items-center pb-5 mb-5 transitiontxtright">
+                            <div class="row justify-content-start align-items-center pb-5 mb-5 ">
                                 <table>
                                     <tr>
                                         <td class="rotate_right">
@@ -385,7 +385,7 @@
                                     </tr>
                                 </table>                            
                             </div>
-                            <div class="row justify-content-start align-items-center transitiontxtright">
+                            <div class="row justify-content-start align-items-center ">
                                 <table>
                                     <tr>
                                         <td class="rotate_right">
@@ -401,32 +401,32 @@
                             <div class="row justify-content-center align-items-center psm-0 pr-5 ">
                                 <p>ask for demo</p>                            </div>
                         </div>
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-5 msmt-3 transitiontxtleft">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-5 msmt-3 ">
                             
                             <img class="w-100 " src="./images/wait.gif " data-src="./images/sections/section5.png" alt="Half Image">                        </div>
                     </div>
 
                 </div>
                 <div class="col-2 col-sm-2 col-md-2 col-lg-1 right-option h-100">
-                    <div id="click2" class="row flex-fill justify-content-center align-items-center h-100 option-right" onclick="app_navigator('section5','section6','Information Techonologies')">
+                    <div id="click2" class="row flex-fill justify-content-center align-items-center h-100 option-right" onclick="app_navigator('section5','section6','Information Techonologies','right')">
                         <p class="bi-arrow-right">Next</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="section6" class=" h-100">
+    <section id="section6" class=" h-100 transitionpage">
         <div class="container-fluid h-100">
             <div class="row flex-fill justify-content-center align-items-top mt-5 h-100">
                 <div class="col-2 col-sm-2 col-md-2 col-lg-1 right-option h-100">
-                    <div id="menu5" class="row flex-fill justify-content-center align-items-center h-100 option-right" onclick="app_navigator('section6','section5','Information Techonologies')">
+                    <div id="menu5" class="row flex-fill justify-content-center align-items-center h-100 option-right" onclick="app_navigator('section6','section5','Information Techonologies','left')">
                         <p class="bi-arrow-left">Prev</p>
                     </div>
                 </div>
                 <div class="col-8 col-sm-8 col-md-8 col-lg-10">
                     <div class="row flex-fill justify-content-around align-items-center msmt-3">
                         <div class="col-12 col-sm-12 col-md-12 col-lg-5 ">
-                            <div class="row justify-content-start align-items-center pb-5 transitiontxtright">
+                            <div class="row justify-content-start align-items-center pb-5 ">
                                 <table>
                                     <tr>
                                         <td class="rotate_left">
@@ -439,7 +439,7 @@
                                     </tr>
                                 </table>                            
                             </div>
-                            <div class="row justify-content-start align-items-center mb-4 pb-5 transitiontxtright">
+                            <div class="row justify-content-start align-items-center mb-4 pb-5 ">
                                 <table>
                                     <tr>
                                         <td class="rotate_right">
@@ -453,7 +453,7 @@
                                     </tr>
                                 </table>                            
                             </div>
-                            <div class="row justify-content-start align-items-center transitiontxtright">
+                            <div class="row justify-content-start align-items-center ">
                                 <table>
                                     <tr>
                                         <td class="rotate_right">
@@ -469,30 +469,30 @@
                                 <p>ask for demo</p>                           
                             </div>
                         </div>
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-4 msmt-3 transitiontxtleft">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-4 msmt-3 ">
                             <img class="w-100 " src="./images/wait.gif " data-src="./images/sections/section6.png" alt="ANT project image">                        </div>
                     </div>
                 </div>
                 <div class="col-2 col-sm-2 col-md-2 col-lg-1 right-option h-100">
-                    <div id="click2" class="row flex-fill justify-content-center align-items-center h-100 option-right" onclick="app_navigator('section6','section7','Information Techonologies')">
+                    <div id="click2" class="row flex-fill justify-content-center align-items-center h-100 option-right" onclick="app_navigator('section6','section7','Information Techonologies','right')">
                         <p class="bi-arrow-right">Next</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="section7" class=" h-100">
+    <section id="section7" class=" h-100 transitionpage">
         <div class="container-fluid h-100">
             <div class="row flex-fill justify-content-center align-items-top mt-5 h-100">
                 <div class="col-2 col-sm-2 col-md-2 col-lg-1 right-option h-100">
-                    <div id="menu5" class="row flex-fill justify-content-center align-items-center h-100 option-right" onclick="app_navigator('section7','section6','Information Techonologies')">
+                    <div id="menu5" class="row flex-fill justify-content-center align-items-center h-100 option-right" onclick="app_navigator('section7','section6','Information Techonologies','left')">
                         <p class="bi-arrow-left">Prev</p>
                     </div>
                 </div>
                 <div class="col-8 col-sm-8 col-md-8 col-lg-10">
                     <div class="row flex-fill justify-content-around align-items-center msmt-3">
                         <div class="col-12 col-sm-12 col-md-12 col-lg-5 ">
-                            <div class="row justify-content-start align-items-center pb-5 transitiontxtright">
+                            <div class="row justify-content-start align-items-center pb-5 ">
                                 <table>
                                     <tr>
                                         <td class="rotate_left">
@@ -505,7 +505,7 @@
                                     </tr>
                                 </table>                            
                             </div>
-                            <div class="row justify-content-start align-items-center pb-5 transitiontxtright">
+                            <div class="row justify-content-start align-items-center pb-5 ">
                                 <table>
                                     <tr>
                                         <td class="rotate_right">
@@ -519,27 +519,27 @@
                                 </table>                            
                             </div>
                         </div>
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-5 msmt-3 transitiontxtleft">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-5 msmt-3 ">
                             <img class="w-100 " src="./images/wait.gif " data-src="./images/sections/section7.png" alt="ANT project image">                        </div>
                     </div>
                 </div>
                 <div class="col-2 col-sm-2 col-md-2 col-lg-1 right-option h-100">
-                    <div id="click2" class="row flex-fill justify-content-center align-items-center h-100 option-right" onclick="app_navigator('section7','section8','Graphic Design')">
+                    <div id="click2" class="row flex-fill justify-content-center align-items-center h-100 option-right" onclick="app_navigator('section7','section8','Graphic Design','right')">
                         <p class="bi-arrow-right">Next</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="section8" class=" h-100">
+    <section id="section8" class=" h-100 transitionpage">
         <div class="container-fluid h-100">
             <div class="row flex-fill justify-content-left align-items-top mt-5 h-100">
                 <div class="col-2 col-sm-2 col-md-2 col-lg-1 right-option h-100">
-                    <div id="menu5" class="row flex-fill justify-content-center align-items-center h-100 option-right" onclick="app_navigator('section8','section7','Information Technologies')">
+                    <div id="menu5" class="row flex-fill justify-content-center align-items-center h-100 option-right" onclick="app_navigator('section8','section7','Information Technologies','left')">
                         <p class="bi-arrow-left">Prev</p>
                     </div>
                 </div>
-                <div class="col-8 col-sm-8 col-md-8 col-lg-11 transitiontxttop">
+                <div class="col-8 col-sm-8 col-md-8 col-lg-11">
                     <div class="row justify-content-center align-items-center">
                         <div class="col-12 ">
                             <div class="row justify-content-center ">
@@ -683,7 +683,7 @@
         </div>
     </section>
 
-    <section id="selfmade" class="h-100">
+    <section id="selfmade" class="h-100 transitionpage">
         <div class="container-fluid h-100">
             <div class="row flex-fill justify-content-center align-items-top h-100">
                 <div class="col-12 ">
@@ -720,7 +720,7 @@
             </div>
         </div>
     </section>
-    <section id="resume" class="h-100">
+    <section id="resume" class="h-100 transitionpage">
         <div class="container-fluid h-100">
             <div class="row flex-fill justify-content-center align-items-center h-75">
                 <div class="col-10 col-sm-10 col-md-10 col-lg-11 ">
@@ -774,7 +774,7 @@
                                     </div>
                                     <div class="row justify-content-start pb-3">
                                         <div class=" bg-black col-8 col-xs-8 col-sm-8 col-md-10">
-                                            <p class="text-center text-white p-0 m-0 diagonaltxt1">75%</p>
+                                            <p class="text-center text-white p-0 m-0 diagonaltxt1">80%</p>
                                         </div>
                                     </div>
                                 </div>
@@ -783,18 +783,18 @@
                     </div>
                 </div>
                 <div class="col-2 col-sm-2 col-md-2 col-lg-1 right-option h-100">
-                    <div id="resumeopt" class="row flex-fill justify-content-center align-items-center h-100 option-right" onclick="app_navigator('resume','resume2','Resume')">
+                    <div id="resumeopt" class="row flex-fill justify-content-center align-items-center h-100 option-right" onclick="app_navigator('resume','resume2','Resume','right')">
                         <p class="bi-arrow-right" >Next</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="resume2" class="h-100">
+    <section id="resume2" class="h-100 transitionpage">
         <div class="container-fluid  h-100">
-            <div class="row flex-fill justify-content-center align-items-center">
-                <div class="col-2 col-sm-2 col-md-2 col-lg-1 h-100">
-                    <div id="menu3" class="row flex-fill justify-content-center align-items-center h-100 option-right">
+            <div class="row flex-fill justify-content-center align-items-center h-100">
+                <div class="col-2 col-sm-2 col-md-2 col-lg-1 right-option h-100">
+                    <div id="menu5" class="row flex-fill justify-content-center align-items-center h-100 option-right" onclick="app_navigator('resume1','resume','Resume','left')">
                         <p class="bi-arrow-left">Prev</p>
                     </div>
                 </div>

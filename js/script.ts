@@ -33,39 +33,29 @@ function removelogo() {
 }
 
 function remove_transitiontxt() {
-  var transitionr = document.querySelectorAll(".transitiontxtright");
-  var transitionl = document.querySelectorAll(".transitiontxtleft");
-  var transitiont = document.querySelectorAll(".transitiontxttop");
+  var transition = document.querySelectorAll(".transitionpage");
 
-  for (const transr of transitionr) {
-    transr.classList.remove("transtxtright");
-  }
-  for (const transl of transitionl) {
-    transl.classList.remove("transtxtleft");
-  }
-  for (const transt of transitiont) {
-    transt.classList.remove("transtxttop");
+  for (const trans of transition) {
+    trans.classList.remove("transpageleft");
+    trans.classList.remove("transpageright");
   }
 }
-function add_transitiontxt() {
-  var transitionr = document.querySelectorAll(".transitiontxtright");
-  var transitionl = document.querySelectorAll(".transitiontxtleft");
-  var transitiont = document.querySelectorAll(".transitiontxttop");
-
+function add_transitionleft() {
+  var transitionr = document.querySelectorAll(".transitionpage");
 
   for (const transr of transitionr) {
     setTimeout(() => {
-      transr.classList.add("transtxtright");
+      transr.classList.add("transpageleft");
     }, 1);
   }
-  for (const transl of transitionl) {
+}
+
+function add_transitionright() {
+  var transitionr = document.querySelectorAll(".transitionpage");
+
+  for (const transr of transitionr) {
     setTimeout(() => {
-      transl.classList.add("transtxtleft");
-    }, 1);
-  }
-  for (const transt of transitiont) {
-    setTimeout(() => {
-      transt.classList.add("transtxttop");
+      transr.classList.add("transpageright");
     }, 1);
   }
 }
@@ -73,7 +63,8 @@ function add_transitiontxt() {
 function app_navigator(
   current_section: string,
   next_section: string,
-  tittle_text: string
+  tittle_text: string,
+  direction: string
 ) {
   if (current_section == "section") {
     if (current_section_temp == null) {
@@ -138,7 +129,12 @@ function app_navigator(
     //    tittle_text_html.style.display = "flex";
     tittle_text_html.innerHTML = tittle_text;
   }
-  add_transitiontxt();
+  if (direction == "left") {
+    add_transitionleft();
+  }
+  if (direction == "right") {
+    add_transitionright();
+  }
 
   //}
 

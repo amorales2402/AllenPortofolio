@@ -10,10 +10,9 @@ html {
   font-family: Helvetica, sans-serif, arial;
 }
 
-p {  font-size: 14px !important;
+p {
+  font-size: 14px !important;
 }
-
-
 
 a {
   color: rgba(202, 76, 76, 1) !important;
@@ -61,9 +60,6 @@ a {
 .btn-dark {
   background-color: transparent !important;
   border: 0px;
-  -webkit-transition: background 1.5s linear;
-  -moz-transition: background 1.5s linear;
-  transition: background 1.5s linear;
 }
 
 .option-right:hover {
@@ -105,7 +101,6 @@ a {
   margin-right: -10em;
 }
 
-
 .after_rotate p {
   margin-left: 2em;
 }
@@ -144,7 +139,7 @@ a {
 }
 
 #selfmade {
-  margin-top:-  2em;
+  margin-top: -2em;
 }
 
 #section1 {
@@ -236,8 +231,27 @@ a {
   font-size: 2rem;
 }
 
-.bt-clickme {
-  margin-top: 100px !important;
+.bt-clickme p {
+  background: linear-gradient(90deg, #000, #fff, #000);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px !important;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  position: relative;
+  animation: clickmetext 5s linear infinite;
+}
+
+@keyframes clickmetext {
+  0% {
+    background-position-x: -500%;
+  }
+  100% {
+    background-position-x: 500%;
+  }
 }
 
 .transcontainerleft {
@@ -275,50 +289,48 @@ a {
   margin-left: 0px !important;
 }
 
-.transcontainertxt {
+.transitionpage {
+  opacity: 0;
   overflow: hidden;
 }
 
-.transitiontxtright {
-  margin-left: 1000px;
-  opacity:0;
-}
-
-.transtxtright {
-  margin-left: 0px;
+.transpageleft {
+  position: relative;
+  animation-name: showsectionleft;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
   opacity: 1;
-  -webkit-transition: margin 0.5s ease, opacity 1.5s ease;
-  -moz-transition: margin 0.5s ease, opacity 1.5s ease;
-  transition: margin 0.5s ease, opacity 1.5s ease;
- 
+  -webkit-transition: opacity 1.5s linear;
+  -moz-transition: opacity 1.5s linear;
+  transition: opacity 1.5s linear;
 }
-
-.transitiontxtleft {
-  margin-left: -1000px;
-  opacity:0;
-}
-
-.transtxtleft {
-  margin-left: 0px;
+.transpageright {
+  position: relative;
+  animation-name: showsectionright;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
   opacity: 1;
-  -webkit-transition: margin 0.5s ease, opacity 1.5s ease;
-  -moz-transition: margin 0.5s ease, opacity 1.5s ease;
-  transition: margin 0.5s ease, opacity 1.5s ease;
+  -webkit-transition: opacity 1.5s linear;
+  -moz-transition: opacity 1.5s linear;
+  transition: opacity 1.5s linear;
 }
 
-.transitiontxttop {
-  margin-top: 1000px;
-  opacity:0;
+@keyframes showsectionleft {
+  from {
+    left: -2000px;
+  }
+  to {
+    left: 0px;
+  }
 }
-
-.transtxttop {
-  margin-top: 0px;
-  opacity: 1;
-  -webkit-transition: margin 0.5s ease, opacity 1.5s ease;
-  -moz-transition: margin 0.5s ease, opacity 1.5s ease;
-  transition: margin 0.5s ease, opacity 1.5s ease;
+@keyframes showsectionright {
+  from {
+    right: -2000px;
+  }
+  to {
+    right: 0px;
+  }
 }
-
 
 @keyframes example {
   0% {
