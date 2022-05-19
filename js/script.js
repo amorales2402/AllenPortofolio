@@ -5,14 +5,26 @@ var next_section;
 function animatelogo() {
     const element_left = document.getElementById("transitionleft");
     const element_right = document.getElementById("transitionright");
+    const element_left_mob = document.getElementById("transitionleft_mob");
+    const element_right_mob = document.getElementById("transitionright_mob");
     if (element_left != null) {
         setTimeout(() => {
             element_left.classList.add("translogoleft");
         }, 1);
     }
+    if (element_left_mob != null) {
+        setTimeout(() => {
+            element_left_mob.classList.add("translogoleft");
+        }, 1);
+    }
     if (element_right != null) {
         setTimeout(() => {
             element_right.classList.add("translogoright");
+        }, 1);
+    }
+    if (element_right_mob != null) {
+        setTimeout(() => {
+            element_right_mob.classList.add("translogoright");
         }, 1);
     }
 }

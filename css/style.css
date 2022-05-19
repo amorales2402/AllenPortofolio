@@ -258,7 +258,8 @@ a {
   overflow: hidden;
 }
 
-#transitionleft {
+#transitionleft,
+#transitionleft_mob {
   float: right;
   height: 100%;
   margin-right: -300px;
@@ -276,7 +277,8 @@ a {
   margin-left: -40px;
 }
 
-#transitionright {
+#transitionright,
+#transitionright_mob {
   float: left;
   height: 100%;
   margin-left: -200px;
@@ -323,6 +325,16 @@ a {
     left: 0px;
   }
 }
+
+@keyframes showsectionleft {
+  from {
+    left: -2000px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
 @keyframes showsectionright {
   from {
     right: -2000px;
@@ -438,7 +450,7 @@ a {
     display: none;
   }
   .mobrow {
-    display: block;
+    display: flex;
   }
   .mobrow .transcontainerright {
     margin-left: -14px;
