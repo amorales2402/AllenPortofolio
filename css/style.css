@@ -24,6 +24,9 @@ a {
 .red_brand_bg {
   background-color: rgba(202, 76, 76, 1);
 }
+.tittle_notifications {
+  text-transform: uppercase;
+}
 
 .bg_5 h1 {
   color: #414042;
@@ -51,6 +54,10 @@ a {
   -webkit-transition: background 0.5s linear;
   -moz-transition: background 0.5s linear;
   transition: background 0.5s linear;
+}
+
+.bg-light #tittle_menu {
+  color: #414042 !important;
 }
 
 .bg-black {
@@ -298,9 +305,12 @@ a {
 
 .transpageleft {
   position: relative;
+  -webkit-animation-name: showsectionleft;
+  -moz-animation-name: showsectionleft;
   animation-name: showsectionleft;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
   animation-duration: 1s;
-  animation-fill-mode: forwards;
   opacity: 1;
   -webkit-transition: opacity 3s linear;
   -moz-transition: opacity 3s linear;
@@ -308,61 +318,16 @@ a {
 }
 .transpageright {
   position: relative;
+  -webkit-animation-name: showsectionright;
+  -moz-animation-name: showsectionright;
   animation-name: showsectionright;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
   animation-duration: 1s;
-  animation-fill-mode: forwards;
   opacity: 1;
   -webkit-transition: opacity 3s linear;
   -moz-transition: opacity 3s linear;
   transition: opacity 3s linear;
-}
-
-@keyframes showsectionleft {
-  from {
-    left: -2000px;
-  }
-  to {
-    left: 0px;
-  }
-}
-
-@keyframes showsectionleft {
-  from {
-    left: -2000px;
-  }
-  to {
-    left: 0px;
-  }
-}
-
-@keyframes showsectionright {
-  from {
-    right: -2000px;
-  }
-  to {
-    right: 0px;
-  }
-}
-
-@keyframes example {
-  0% {
-    top: 0px;
-  }
-  20% {
-    top: 2px;
-  }
-  40% {
-    top: 4px;
-  }
-  60% {
-    top: 6px;
-  }
-  80% {
-    top: 8px;
-  }
-  100% {
-    top: 10px;
-  }
 }
 
 .selfmade {
@@ -454,5 +419,113 @@ a {
   }
   .mobrow .transcontainerright {
     margin-left: -14px;
+  }
+}
+
+@-webkit-keyframes showsectionleft {
+  from {
+    left: -2000px;
+  }
+  to {
+    left: 0px;
+  }
+}
+@-moz-keyframes showsectionleft {
+  from {
+    left: -2000px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+@keyframes showsectionleft {
+  from {
+    left: -2000px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+@-webkit-keyframes showsectionleft {
+  from {
+    left: -2000px;
+  }
+  to {
+    left: 0px;
+  }
+}
+@-moz-keyframes showsectionleft {
+  from {
+    left: -2000px;
+  }
+  to {
+    left: 0px;
+  }
+}
+@keyframes showsectionleft {
+  from {
+    left: -2000px;
+  }
+  to {
+    left: 0px;
+  }
+}
+@-webkit-keyframes showsectionright {
+  from {
+    right: -2000px;
+  }
+  to {
+    right: 0px;
+  }
+}
+@-moz-keyframes showsectionright {
+  from {
+    right: -2000px;
+  }
+  to {
+    right: 0px;
+  }
+}
+@keyframes showsectionright {
+  from {
+    right: -2000px;
+  }
+  to {
+    right: 0px;
+  }
+}
+@-webkit-keyframes BackgroundNotifications {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes BackgroundNotifications {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes BackgroundNotifications {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
