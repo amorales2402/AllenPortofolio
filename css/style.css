@@ -252,15 +252,6 @@ a {
   animation: clickmetext 5s linear infinite;
 }
 
-@keyframes clickmetext {
-  0% {
-    background-position-x: -500%;
-  }
-  100% {
-    background-position-x: 500%;
-  }
-}
-
 .transcontainerleft {
   overflow: hidden;
 }
@@ -280,21 +271,21 @@ a {
 }
 
 .transcontainerright {
-  overflow: hidden;
+  
   margin-left: -40px;
 }
 
 #transitionright,
-#transitionright_mob {
+#transitionright_mob { 
   float: left;
   height: 100%;
   margin-left: -200px;
 }
 
 .translogoright {
-  -webkit-transition: margin 1.5s linear;
-  -moz-transition: margin 1.5s linear;
-  transition: margin 1.5s linear;
+  -webkit-transition: margin-left 1.5s linear;
+  -moz-transition: margin-left 1.5s linear;
+  transition: margin-left 1.5s linear;
   margin-left: 0px !important;
 }
 
@@ -527,5 +518,14 @@ a {
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+
+@keyframes clickmetext {
+  0% {
+    background-position-x: -500%;
+  }
+  100% {
+    background-position-x: 500%;
   }
 }
