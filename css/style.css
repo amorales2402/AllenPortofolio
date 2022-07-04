@@ -261,6 +261,7 @@ a {
   float: right;
   height: 100%;
   margin-right: -300px;
+  overflow:hidden;
 }
 
 .translogoleft {
