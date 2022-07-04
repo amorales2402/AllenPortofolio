@@ -272,7 +272,7 @@ a {
 }
 
 .transcontainerright {
-  
+  overflow:hidden;
   margin-left: -40px;
 }
 
