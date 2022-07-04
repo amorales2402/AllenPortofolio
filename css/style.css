@@ -261,7 +261,6 @@ a {
   float: right;
   height: 100%;
   margin-right: -300px;
-  overflow:hidden;
 }
 
 .translogoleft {
@@ -269,6 +268,7 @@ a {
   -moz-transition: margin 1.5s linear;
   transition: margin 1.5s linear;
   margin-right: 0px !important;
+  overflow:hidden;
 }
 
 .transcontainerright {
@@ -281,7 +281,6 @@ a {
   float: left;
   height: 100%;
   margin-left: -200px;
-  overflow:hidden;
 }
 
 .translogoright {
@@ -289,6 +288,7 @@ a {
   -moz-transition: margin-left 1.5s linear;
   transition: margin-left 1.5s linear;
   margin-left: 0px !important;
+   overflow:hidden;
 }
 
 .transitionpage {
